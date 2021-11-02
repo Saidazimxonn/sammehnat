@@ -1,0 +1,2 @@
+# sammehnat
+Samarqand mehnat boshqarmasi
