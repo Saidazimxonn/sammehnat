@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<section class="inner-page">
+    <div class="container">
+      
+      <div class="row">
+          <div class="col-md-9">                  
+           
+{% for section in sections_list %}
+
+<div class="personalBlock">                        
+                <a target="_blank" href="../../uploads/1550475473_img_20181205_180628_481.jpg"> 
+                <img class="personalImage" src="{{ section.image.url}}"></a>
+                                                
+        <div class="personalCard">
+            <div class="personalCardName"><i class="bx bx-user"></i>{{section.name}}</div>
+            <div class="personalCardPosition"><i class="bx bx-shield"></i>{{ section.title}}</div>
+            <div class="personalCardRecDays"><i class="bx bx-phone"></i>Telefon: {{section.phone}}</div>
+            <div class="personalCardRecDays"><i class="bx bx-task"></i>Qabul kunlari: {{ section.acceptance_dates}}</div>
+            
+            <div class="minButtons js-toggleLinks">
+              <a class="btn btn-info p-2" href="#biography">Tarjimai hol</a>
+              <a class="btn btn-info p-2" href="#functions">Funksiya va vazifalar</a>
+            </div>
+
+            <div id="biography" class="personalBiography">
+               <p></p><div class="personHistoryItem">
+                       <div class="personHistoryDesc"></div>
+                       <div class="personHistoryPeriod">{{section.biography}}</div>
+                  </div></div>
+            <div id="functions" class="personalBiography"><p style="text-align: justify;"><p style="text-align: center; "><b>{{section.functions_tasks}}</b></p></p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    {% endfor %}
+            </div>
+          
+          <div class="col-md-3"> 
+      <div class="blog-sidebar margin-b-30">
+          <div class="blog-sidebar-heading">
+            <i class="blog-sidebar-heading-icon bx bx-history"></i>
+            <h4 class="blog-sidebar-heading-title">So`nggi yangiliklar</h4>
+          </div>
+          <div class="blog-sidebar-content">                  
+            <ul class="timeline-v2">
+                             </ul>
+          </div>
+      </div>
+    
+      <div class="blog-sidebar">
+        <div class="blog-sidebar-heading">
+          <i class="blog-sidebar-heading-icon bx bx-key"></i>
+          <h4 class="blog-sidebar-heading-title">Kalit so`zlar</h4>
+        </div>
+        <div class="blog-sidebar-content">
+          <ul class="list-inline blog-sidebar-tags">
+                        </ul>
+        </div>
+      </div>
+    
+    </div>
+         
+        </div>
+
+    </div>
+  </section> 
+{% endblock content %} 

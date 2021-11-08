@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<main id="main">
+
+    <!-- End Breadcrumbs Section -->
+
+    <section class="inner-page">
+      <div class="container">	
+	  
+		<div class="row">
+            {% for post in news_list %}
+               <div class="col">
+			<div class="card" style="width: 20rem;">
+			<div class="card-img-top product-img img-fluid"  style="background-image:url('{{post.image.url}}');height:250px;width:100%;  background-size:cover;  background-position:center"></div>
+				<div class="card-body">
+   
+				  <h5 class="card-title">{{post.title}}</h5>
+				  <p class="card-text">{{post.Text}}</p>
+                  <a href="#" class="btn btn-primary pt-2">Davomi...</a>
+				</div>  
+			  </div>
+			  </div>
+			  {% endfor %}
+					  </div>
+		
+		  		  
+				
+		</div>		
+      </div>
+	  
+		<nav aria-label="Page navigation example">
+		  <ul class="pagination justify-content-center">
+			<li class="page-item">
+			  <a class="page-link" href="news2679.html?page=1" aria-label="Previous">
+				<span aria-hidden="true">&laquo;</span>
+				<span class="sr-only">Previous</span>
+			  </a>
+			</li>
+						
+			
+			<li class="page-item">
+			  <a class="page-link" href="news4658.html?page=2" aria-label="Next">
+				<span aria-hidden="true">&raquo;</span>
+				<span class="sr-only">Next</span>
+			  </a>
+			</li>
+		  </ul>
+		</nav>
+	  
+    </section>
+
+  </main>
+{% endblock content %} 
