@@ -157,7 +157,7 @@
 				   <!-- <li><a href="#">Boshqarma tarixi</a></li> -->
 						 
 	 </ul></li>
-<!-- <li class="drop-down"><a href="#">Faoliyat yo`nalishlari</a> 
+<li class="drop-down"><a href="#">Faoliyat yo`nalishlari</a> 
 	  <ul class="menu2">          	 
 				   <li><a href="oz/pages/pagef620.html?url=faoliyat">Bandlik</a></li>
 						 
@@ -167,10 +167,10 @@
 						 
 				   <li><a href="#">Mehnat migratsiyasi</a></li>
 						 
-	 </ul></li> -->
+	 </ul></li>
 <li class="drop-down"><a href="oz/index.html#news">Matbuot markazi</a> 
 	  <ul class="menu2">          	 
-				   <li><a href="oz/pages/news.html">Barcha yangiliklar</a></li>
+				   <li><a href="{% url 'news' %}">Barcha yangiliklar</a></li>
 						 
 				   <li><a href="{% url 'gmenyu' %}#faq">Ko`p beriladigan savollar</a></li>
 						 
@@ -210,7 +210,7 @@
 <!-- <li class="drop-down"><a href="#">Vakansiya</a> 
 	  <ul class="menu2">          	 
 	 </ul></li> -->
-<li class="drop-down" ><a href="#contact">Bog`lanish</a> 
+<li class="drop-down" ><a href="{% url 'gmenyu' %}#contact">Bog`lanish</a> 
 	  <ul class="menu2">          	 
 	 </ul></li>
  </ul></li>

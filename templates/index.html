@@ -5,10 +5,20 @@
 
 
 	<!-- ***** Welcome Area Start ***** -->
-	<div class="welcome-area" id="welcome">
+	
 		<!-- ***** Header Text Start ***** -->
 		<div class="header-text">
+			{% if messages %}
+			{% for msg in messages %}
+			<div class="alert alert-primary mt-2" role="alert">
+				{{msg}}
+			  </div>
+			{% endfor %}
+			{% endif %}
+			<div class="welcome-area" id="welcome">
+			
 			<div class="container">
+			
 				<div class="row">
 					<div class="col-lg-5 col-md-12 col-sm-12 align-self-left" style="margin-top: 50px;" >
 						<h1 style="font-size: 58px;color: rgb(36, 35, 35); text-secondary;line-height: 50px;">O‘zbekiston Respublikasi Bandlik va mehnat munosabatlari vazirligi <br> <b  style="font-size: 30px;color: rgb(146, 140, 140);">Samarqand viloyati Bandlik bosh boshqarmasi</b> </h1>
@@ -508,38 +518,46 @@
 							<div class="row">
 								<!-- ***** Contact Text Start ***** -->
 								<div class="col-lg-4 col-md-6 col-sm-12">
-									<h5 class="margin-bottom-30">Get in touch</h5>
+							
 									<div class="contact-text">
-										<p>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam tempus magna vel turpis pharetra dictum. </p>
-										<p>Sed blandit tempus purus, sed sodales leo rutrum vel. Nam vulputate ipsum ac est congue, eget commodo magna lobortis.</p>
+										<h4>
+											O`zbekiston Respublikasi bandlik va mehnat munosabatlari vazirligi
+										</h4>
+										<h4 style="font-weight: bolder;">Samarqand viloyati Bandlik bosh boshqarmasi</4>
 									</div>
 								</div>
 								<!-- ***** Contact Text End ***** -->
 
 								<!-- ***** Contact Form Start ***** -->
+							
 								<div class="col-lg-8 col-md-6 col-sm-12">
+									<form class="contact-form" action="{% url 'action_view'%}" method="POST">
+										<input type="hidden" , name="action" , value="create_ad">
+										{% csrf_token %}
 									<div class="contact-form">
 										<div class="row">
 											<div class="col-lg-6 col-md-12 col-sm-12">
-												<input type="text" placeholder="F.I.O">
+												<input type="text" name="name"  placeholder="F.I.O" required="required">
 											</div>
 											<div class="col-lg-6 col-md-12 col-sm-12">
-												<input type="text" placeholder="E-Mail">
+												<input type="text"  name="email" placeholder="E-Mail" required="required">
 											</div>
 											<div class="col-lg-6 col-md-12 col-sm-12">
-												<input type="text" placeholder="Telefon">
+												<input type="text" name="phone" placeholder="Telefon" required="required">
 											</div>
 											<div class="col-lg-6 col-md-12 col-sm-12">
-												<input type="text" placeholder="Mavzu">
+												<input type="text" name="message" placeholder="Mavzu" required="required">
 											</div>
 											<div class="col-lg-12">
-												<textarea placeholder="Matn..."></textarea>
+												<textarea  name="message_long" placeholder="Matn..." required="required"></textarea>
 											</div>
 											<div class="col-lg-12">
-												<button class="btn-primary-line">Yuborish</button>
+												<button class="btn-primary-line" type="submit">Yuborish</button>
 											</div>
 										</div>
 									</div>
+								</form>
+
 								</div>
 								<!-- ***** Contact Form End ***** -->
 							</div>

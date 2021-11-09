@@ -50,7 +50,7 @@ class RegionalCenters(models.Model):
         
 class Post(models.Model):
     user = models.ForeignKey(User,verbose_name='Muallif', on_delete=models.CASCADE)
-    title = models.CharField(verbose_name="Qisqa matn", max_length=250)
+    title = models.CharField(verbose_name="Qisqa matn", max_length=300)
     Text = models.TextField(verbose_name="Matin", null=True, blank=True)
     image = models.ImageField()
     date  = models.DateTimeField(auto_now_add=True)
@@ -61,3 +61,17 @@ class Post(models.Model):
     class Meta:
         verbose_name="Yangilik"
         verbose_name_plural="Yangiliklar"
+
+
+# Create your models here.
+class LiveMessage(models.Model):
+    name = models.CharField(verbose_name="Name", max_length=100)
+    phone = models.CharField(verbose_name="Phone", max_length=100)
+    message = models.CharField(verbose_name="Message", max_length=100)
+    message_long = models.TextField(verbose_name="Message long")
+
+    def __str__(self):
+        return self.name
+    class Meta:
+        verbose_name = 'Xabar'
+        verbose_name_plural = 'Xabarlar'

@@ -1,7 +1,12 @@
 from django.db import models
 from django.shortcuts import render
-from django.views.generic import TemplateView, ListView
+from django.views.generic import TemplateView, ListView, DetailView,View
 from .models import Managment, Sections, RegionalCenters, Post
+from django.core.paginator import Paginator, PageNotAnInteger, EmptyPage
+from django.shortcuts import redirect, render
+from django.urls import reverse
+from .helpers import create_ad
+from django.contrib import messages
 # Create your views here.
 class GlobaslView(TemplateView):
     template_name = 'index.html'
@@ -31,10 +36,42 @@ class RegionalView(TemplateView):
         return context
 
 
-class NewsView(TemplateView):
-    template_name = 'news.html'
+class NewsView(ListView):
     model = Post
-    def get_context_data(self, **kwargs):
-        context = super(NewsView, self).get_context_data(**kwargs)
-        context['news_list'] = Post.objects.all()
-        return context
+    template_name = 'news.html'
+    context_object_name = 'news_list'
+    paginate_by = 3
+    
+    # def get_context_data(self, **kwargs):
+    #     context = super(NewsView, self).get_context_data(**kwargs)
+    #     try:
+    #          users = paginator.page(page)
+    #     except PageNotAnInteger:
+    #         users = paginator.page(1)
+    #     except EmptyPage:
+    #         users = paginator.page(paginator.num_pages)
+    #     context['news_list'] = Post.objects.all()
+
+    #     return context
+
+class NewsDetailView(DetailView):
+    model = Post
+    template_name = 'detail_news.html'
+    context_object_name = 'news_detail'
+    # def get_context_data(self, **kwargs):
+    #     context = super(NewsDetailView,self).get_context_data(**kwargs)
+    #     detail_post = Post.objects.all()
+        
+    #     context['news_detail'] = detail_post
+        # return context
+
+class ActinView(View):
+    
+    def post(self, request):
+        post_request=request.POST
+        actions = {
+            'create_ad':create_ad,
+        }
+        messages.success(request, 'Xabaringiz yuborildi')
+        actions[self.request.POST.get('action', None)](post_request)
+        return redirect('/')
