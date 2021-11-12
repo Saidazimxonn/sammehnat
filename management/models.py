@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
-from django.db.models.query import InstanceCheckMeta
+
+
 
 class Managment(models.Model):
     name = models.CharField(verbose_name="F.I.SH", max_length=250)

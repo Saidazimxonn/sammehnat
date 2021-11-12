@@ -1,0 +1,648 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-11-12 08:50+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\config\settings.py:132
+msgid "Uzbek"
+msgstr "Uzbek"
+
+#: .\config\settings.py:133
+msgid "Korean"
+msgstr "Korean"
+
+#: .\config\settings.py:134
+msgid "Russian"
+msgstr "Russian"
+
+#: .\config\settings.py:135
+msgid "English"
+msgstr ""
+
+#: .\templates\base.html:9
+#, fuzzy
+#| msgid "Samarqand viloyati Bandlik bosh boshqarmasi"
+msgid "Samarqand viloyati"
+msgstr "of the Samarkand Region"
+
+#: .\templates\base.html:9
+#, fuzzy
+#| msgid "Samarqand viloyati Bandlik bosh boshqarmasi"
+msgid "Bandlik bosh boshqarmasi"
+msgstr "of the Samarkand Region"
+
+#: .\templates\base.html:145
+msgid "Bizning ijtimoiy tarmoqlar"
+msgstr "Our social networks"
+
+#: .\templates\base.html:153
+msgid "Qidiruv..."
+msgstr "Search..."
+
+#: .\templates\base.html:174
+msgid "Boshqarma"
+msgstr "HEAD DEPARTMENT"
+
+#: .\templates\base.html:178
+msgid "Rahbariyat"
+msgstr "Administration"
+
+#: .\templates\base.html:180
+msgid "Bo`limlar"
+msgstr "Departments"
+
+#: .\templates\base.html:182
+msgid "Hududiy markazlar"
+msgstr "Regional centers"
+
+#: .\templates\base.html:187
+msgid "Faoliyat yo`nalishlari"
+msgstr "Areas of activity"
+
+#: .\templates\base.html:189
+msgid "Bandlik"
+msgstr "Employment"
+
+#: .\templates\base.html:191
+msgid "Mehnat muhofazasi"
+msgstr "Occupational Safety"
+
+#: .\templates\base.html:193
+msgid "Mehnat inspeksiyasi"
+msgstr "Labor inspectorate"
+
+#: .\templates\base.html:195
+msgid "Mehnat migratsiyasi"
+msgstr "Work migration"
+
+#: .\templates\base.html:198
+msgid "Matbuot markazi"
+msgstr "Press center"
+
+#: .\templates\base.html:200
+msgid "Barcha yangiliklar"
+msgstr "All news"
+
+#: .\templates\base.html:202
+msgid "Ko`p beriladigan savollar"
+msgstr "Frequently asked questions"
+
+#: .\templates\base.html:204
+msgid "Telegram"
+msgstr "Telegram"
+
+#: .\templates\base.html:206
+msgid "Facebook"
+msgstr "Facebook"
+
+#: .\templates\base.html:208
+msgid "Instagram"
+msgstr "Instagram"
+
+#: .\templates\base.html:213
+msgid "Qabulxona"
+msgstr "Reception"
+
+#: .\templates\base.html:215
+msgid "Onlayn qabulga yozilish"
+msgstr "Online reception"
+
+#: .\templates\base.html:217
+msgid "Qabul jadvali"
+msgstr "Reception schedule"
+
+#: .\templates\base.html:219
+msgid "Telefon raqamlar ma`lumoti"
+msgstr "Telephone directory"
+
+#: .\templates\base.html:222
+msgid "Me`yoriy-huquqiy hujjatlar"
+msgstr "Regulations"
+
+#: .\templates\base.html:224
+msgid "O`zbekiston Respublikasi Qonunlari"
+msgstr "Laws of the Republic of Uzbekistan"
+
+#: .\templates\base.html:226
+msgid "O`zbekiston Respublikasi Prezidentining farmon va qarorlari"
+msgstr "Decrees and Resolutions of the President of the Republic of Uzbekistan"
+
+#: .\templates\base.html:228
+msgid "O`zbekiston Respublikasi Vazirlar Mahkamasining qarorlari"
+msgstr "Resolutions of the Cabinet of Ministers of the Republic of Uzbekistan"
+
+#: .\templates\base.html:230
+msgid ""
+"O‘zbekiston Respublikasi Bandlik va mehnat munosabatlari vazirligi me`yoriy "
+"hujjatlari"
+msgstr ""
+"Normative acts Ministry of Employment and Labor Relations of the Republic of "
+"Uzbekistan"
+
+#: .\templates\base.html:232
+msgid ""
+"O‘zbekiston Respublikasi Adliya vazirligi ro‘yxatidan o‘tgan me`yoriy-"
+"huquqiy xujjatlar"
+msgstr ""
+"Normative legal acts registered with the Ministry of Justice of the Republic "
+"of Uzbekistan"
+
+#: .\templates\base.html:234
+msgid "Korrupsiyaga qarshi kurashish"
+msgstr "Anti-corruption"
+
+#: .\templates\base.html:240
+msgid "Bog`lanish"
+msgstr "Contacts"
+
+#: .\templates\bayroq.html:12
+msgid "BAYROQ"
+msgstr "FLAG"
+
+#: .\templates\bayroq.html:21
+msgid "O‘ZBEKISTON RESPUBLIKASINING DAVLAT BAYROG‘I"
+msgstr "STATE FLAG OF THE REPUBLIC OF UZBEKISTAN"
+
+#: .\templates\bayroq.html:23
+msgid ""
+" “O‘zbekiston Respublikasi Davlat bayrog‘i to‘g‘risida”gi qonun 1991 yil 18 "
+"noyabrda O‘zbekiston Respublikasi Oliy Kengashining navbatdan tashqari "
+"O‘tkazilgan VII sessiyasida qabul qilingan. "
+msgstr ""
+"The Law On the State Flag of the Republic of Uzbekistan was adopted on "
+"November 18, 1991 at the eighth session of the Supreme Council of the "
+"Republic of Uzbekistan."
+
+#: .\templates\bayroq.html:24
+msgid ""
+" Davlat bayrog‘i va uning ramzi bugungi O‘zbekiston sarhadida qadimda mavjud "
+"bo‘lgan davlatlar bilan tarixan bog‘liqligini anglatadi hamda respublikaning "
+"milliy-madaniy an'analarini o‘zida mujassamlashtiradi.' "
+msgstr ""
+"The symbolism of the State flag of the Republic of Uzbekistan continues the "
+"best traditions inherent in the flags of powerful powers that existed on the "
+"territory of our country, at the same time reflects the natural features of "
+"the republic, the national and cultural identity of the people."
+
+#: .\templates\bayroq.html:25
+msgid ""
+" Bayroqdagi moviy rang tiriklik mazmuni aks etgan mangu osmon va obihayot "
+"ramzi. Timsollar tilida bu – yaxshilikni, donishmandlikni, halollikni, shon-"
+"shuhrat va sadoqatni bildiradi. Binobarin, Amir Temur davlati bayrog‘ining "
+"rangi ham moviy rangda edi. Bayroqdagi oq rang – muqaddas tinchlik ramzi "
+"bo‘lib, u kun charog‘onligi va koinot yoritqichlari bilan uyg‘unlashib "
+"ketadi. Oq rang – poklik, beg‘uborlik, soflikni, orzu va hayollar tozaligi, "
+"ichki go‘zallikka intilishning timsoli.' "
+msgstr ""
+"Sky blue on the flag is a symbol of blue sky and clear water. The azure "
+"color is revered in the East; the great Amir Temur once chose it for his "
+"flag.White color is a symbol of peace and purity. A young independent state "
+"must overcome high passes on its way. The white color on the flag means a "
+"good wish that the path is clean and bright."
+
+#: .\templates\bayroq.html:26
+msgid ""
+" Yashil rang – tabiatning yangilanish ramzi. U ko‘pgina xalqlarda "
+"navqironlik, umid va shodumonlik timsoli hisoblanadi. Qizil chiziqlar – "
+"vujudimizda jo‘shib oqayotgan hayotiy qudrat irmoqlarini anglatadi.' "
+msgstr ""
+"Green color is the personification of blessed nature. Currently, the "
+"movement to protect the environment is expanding around the world, the "
+"symbol of which is also the green color."
+
+#: .\templates\bayroq.html:27
+msgid ""
+" Navqiron yarim oy tasviri bizning tarixiy an'analarimiz bilan bog‘liq. Ayni "
+"paytda u qo‘lga kiritilgan mustaqilligimiz ramzi ham.Yulduzlar barcha uchun "
+"ruhoniy, ilohiy timsol sanalgan. O‘zbekiston Respublikasi Davlat "
+"bayrog‘idagi 12 yulduz tasviri ham tarixiy an'analarimiz, qadimgi "
+"yilnomamizga bevosita aloqador. Bizning O‘n ikki yulduzga bo‘lgan "
+"e'tiborimiz O‘zbekiston sarhadidagi qadimgi davlatlar ilmiy tafakkurida "
+"nujum ilmi taraqqiy etganligi bilan ham izohlanadi.' "
+msgstr ""
+"Red stripes -are the life forces pulsating in every living creature, a "
+"symbol of life."
+
+#: .\templates\bayroq.html:28
+msgid ""
+" Davlat bayrog‘imizdagi 12 yulduz tasvirini o‘zbek xalqi madaniyatining "
+"qadimiyligi, uning komillikka, o‘z tuprog‘ida saodatga intilishi ramzi "
+"sifatida tushunish lozim.' "
+msgstr ""
+"The crescent corresponds to the centuries-old tradition of the people of "
+"Uzbekistan. The crescent and stars are a symbol of the cloudless sky of the "
+"world. Our flag has 12 stars. The number 12 is considered a mark of "
+"excellence."
+
+#: .\templates\detail_news.html:53 .\templates\regional.html:46
+msgid "So`nggi yangiliklar"
+msgstr "Latest news"
+
+#: .\templates\gerb.html:12
+msgid "GERB"
+msgstr "EMBLEM"
+
+#: .\templates\gerb.html:21
+msgid "O‘ZBEKISTON RESPUBLIKASI DAVLAT GERBI"
+msgstr "STATE EMBLEM OF THE REPUBLIC OF UZBEKISTAN"
+
+#: .\templates\gerb.html:24
+msgid ""
+"“O‘zbekiston Respublikasi Davlat gerbi to‘g‘risida”gi qonun 1992 yil 2 "
+"iyulda O‘zbekiston Respublikasi Oliy Kengashining X sessiyasida qabul "
+"qilingan.<br>O‘zbekiston Respublikasining Davlat gerbi gullagan vodiy uzra "
+"charaqlab turgan quyosh tasviridan hamda so‘l tomonida bug‘doy boshoqlari, "
+"O‘ng tomonida ochilgan paxta chanoqlari suvrati tushirilgan chambardan "
+"iborat."
+msgstr ""
+"The Law On the State Emblem of the Republic of Uzbekistan was adopted on "
+"July 2, 1992 at the tenth session of the Supreme Council of the Republic of "
+"Uzbekistan In the center of the coat of arms is a Humo bird with spread "
+"wings - a symbol of happiness and freedom. Our great ancestor Alisher Navoi "
+"characterized the Humo bird as the kindest of all living things."
+
+#: .\templates\gerb.html:25
+msgid ""
+"Gerbning yuqori qismida respublika jipsligining ramzi sifatida sakkiz "
+"qirrali yulduz tasvirlangan: sakkiz qirra ichida joylashgan yarim oy va "
+"yulduz musulmonlarning qutlug‘ ramzidir."
+msgstr ""
+"At the top of the coat of arms is an octahedron, symbolizing the sign of "
+"approval of the republic, inside a crescent moon with a star."
+
+#: .\templates\gerb.html:26
+msgid ""
+"Gerbning markazida himmat, olijanoblik va fidoyilik timsoli bo‘lgan "
+"afsonaviy Humo qushi qanotlarini yozib turibdi. Ushbu ramz va timsollar "
+"xalqimizning tinchlik, yaxshilik, baxt-saodat, farovonlik yo‘lidagi orzu-"
+"umidlarini ifodalaydi."
+msgstr ""
+"The image of the sun is a wish that the path of our state be illuminated "
+"with bright light. At the same time, it points to the unique climatic "
+"conditions of the republic."
+
+#: .\templates\gerb.html:27
+msgid ""
+"Gerbning pastki qismida respublika Davlat bayrog‘ini ifoda etuvchi chambar "
+"lentasining bandiga \"O‘zbekiston\" deb yozib qo‘yilgan."
+msgstr ""
+"Ears of corn - a symbol of daily bread, stalks with popping cotton bins - "
+"the main wealth of our sunny Earth, glorified it around the world. Spikes "
+"and cotton bins intertwined with the State Flag ribbon mean the "
+"consolidation of the peoples living in the republic."
+
+#: .\templates\index.html:25
+msgid "O‘zbekiston Respublikasi Bandlik va mehnat munosabatlari vazirligi "
+msgstr ""
+"Ministry of Employment and Labor Relations of the Republic of Uzbekistan"
+
+#: .\templates\index.html:25 .\templates\index.html:526
+msgid "Samarqand viloyati Bandlik bosh boshqarmasi"
+msgstr "Main Department of Employment of the Samarkand Region"
+
+#: .\templates\index.html:44
+msgid "O‘zbekiston Respublikasi Bandlik va mehnat munosabatlari vazirligi"
+msgstr ""
+"Ministry of Employment and Labor Relations of the Republic of Uzbekistan"
+
+#: .\templates\index.html:45
+msgid "“Yangi o'zbekistonda erkin va farovon yashaylik”"
+msgstr "Let us live freely and comfortably in New Uzbekistan"
+
+#: .\templates\index.html:62
+msgid "Davlat xizmatlari"
+msgstr "Public Services"
+
+#: .\templates\index.html:73
+msgid "O'zbekistonda ish topish"
+msgstr "Find job in Uzbekistan"
+
+#: .\templates\index.html:85
+msgid "Ishga joylashganim tarixi"
+msgstr "My employment history"
+
+#: .\templates\index.html:97
+msgid "Davlat mehnat inspeksiyasiga murojaat qilish"
+msgstr "Contact the State labour inspectorate"
+
+#: .\templates\index.html:109
+msgid "Yuridik shaxslar uchun Mehnat shartnomasini onlayn rasmiylashtirish"
+msgstr "Sign an employment contract online for corporate"
+
+#: .\templates\index.html:119
+msgid "Yuridik shaxslar uchun Ishchi topish"
+msgstr "Find an employee for corporate"
+
+#: .\templates\index.html:129
+msgid ""
+"Yuridik shaxslar uchun XBAni xususiy bandlik agentliklari reestriga kiritish"
+msgstr ""
+"Include PEA in the Register of private employment agencies for corporate"
+
+#: .\templates\index.html:142
+msgid "Davlat mehnat inspeksiyasi statistikasi"
+msgstr "Statistics of the State Labour Inspectorate"
+
+#: .\templates\index.html:150
+msgid "Jami"
+msgstr "Total"
+
+#: .\templates\index.html:151 .\templates\index.html:165
+msgid "murojaatlar"
+msgstr "appeals"
+
+#: .\templates\index.html:157
+msgid "Tekshirish"
+msgstr "Inspections"
+
+#: .\templates\index.html:158
+msgid "va o\\"
+msgstr "and studies"
+
+#: .\templates\index.html:164
+msgid "Qanoatlantirilgan"
+msgstr "Satisfied"
+
+#: .\templates\index.html:171
+msgid "Solingan"
+msgstr "Fines"
+
+#: .\templates\index.html:171
+msgid "jarimalar"
+msgstr "imposed"
+
+#: .\templates\index.html:184
+msgid "Davlat organlari saytlari"
+msgstr "Government sites"
+
+#: .\templates\index.html:198 .\templates\index.html:524
+msgid "O`zbekiston Respublikasi bandlik va mehnat munosabatlari vazirligi"
+msgstr ""
+"Ministry of Employment and Labor Relations of the Republic of Uzbekistan"
+
+#: .\templates\index.html:209
+msgid "O`zbekiston respublikasi prezidentining rasmiy veb-sayti"
+msgstr "OFFICIAL WEBSITE OF THE PRESIDENT OF THE REPUBLIC OF UZBEKISTAN"
+
+#: .\templates\index.html:219 .\templates\index.html:252
+msgid "Yagona interaktiv davlat xizmatlari portali"
+msgstr "A single portal of interactive government servicesx"
+
+#: .\templates\index.html:230
+msgid "O`zbekiston Respublikasi ochiq ma'lumotlar portali"
+msgstr "Open Data Portal of the Republic of Uzbekistan"
+
+#: .\templates\index.html:241
+msgid "O`zbekiston Respublikasi Hukumat portali"
+msgstr "The Government portal of the Republic of Uzbekistan"
+
+#: .\templates\index.html:276
+msgid "Ko'p beriladigan savollar"
+msgstr "Frequently asked questions"
+
+#: .\templates\index.html:285
+msgid "Ish joylarni attestasiyadan o‘tkazish – bu nima?"
+msgstr "Workplace certification - what it means?"
+
+#: .\templates\index.html:292
+msgid ""
+"Ish joylarni attestasiyadan o`tkazish – ishlab chiqarish muhitidagi "
+"fizikaviy, kimyoviy, biologik omillarni, ish joyida mehnat jarayonidagi "
+"og`irlik va zo`riqishni sinov asboblarida kompleks o`rganish, uskunalarning "
+"jarohat yetkazish xavfini aniqlash jarayonidir."
+msgstr ""
+"Certification of workplaces is a process of a comprehensive study of the "
+"physical, chemical, biological factors of the working environment, the "
+"severity and intensity of the work process at the workplace on testing "
+"devices, the risk of equipment damage."
+
+#: .\templates\index.html:300
+msgid "Ish joylarning attestasiyadan o`tkazish qayerda o`tkaziladi?"
+msgstr "Where certification of workplaces is carried out ?"
+
+#: .\templates\index.html:306
+msgid ""
+"O‘zbekiston Respublikasi Adliya vazirligida 28 may 1996 yilda 247-raqam "
+"bilan ro‘yxatga olingan “Mehnat sharoitlarini baxolash, mehnat sharoitlari "
+"bo‘yicha ish joylarini attestasiyadan o‘tkazish uslubiyoti”ga muvofiq "
+"attestasiyadan o‘tkazish ishlari tashkiliy-huquqiy shakli, mulkchilik shakli "
+"va idoraviy bo‘ysunishidan qat'i nazar korxona va tashkilotlarda amalga "
+"oshiriladi."
+msgstr ""
+"The organizational and legal form of certification, the form of ownership in "
+"accordance with the Methodology for assessing working conditions, "
+"certification of workplaces for working conditions, registered with the "
+"Ministry of Justice of the Republic of Uzbekistan on May 28, 1996, No. 247 "
+"and is carried out at enterprises and organizations, regardless of "
+"departmental subordination."
+
+#: .\templates\index.html:314
+msgid "Nima uchun ish joylarni attestasiyadan o‘tkazish zarur?"
+msgstr "Why is it necessary to carry out certification of workplaces ?"
+
+#: .\templates\index.html:320 .\templates\index.html:337
+msgid ""
+"Ish joylarni attestasiyadan o‘tkazishning asosiy maqsadi, fuqarolarni "
+"sanitariya-gigiena me'yorlariga javob beruvchi sog‘lom va xavfsiz mehnat "
+"sharoitlariga bo‘lgan konstitusiyaviy huquqlarini ro‘yobga chiqarish;\n"
+"\n"
+"\t\t\t\t\t\t\t\tIsh joyi sharoitining zararliligi va mehnatning xavfliligi "
+"darajasini va qanday sinfga ta'aluqliligini asoslash;\n"
+"\t\t\t\t\t\t\t\t\n"
+"\t\t\t\t\t\t\t\tIshlab chiqarishda jarohatlanish va kasb kasalliklariga "
+"chalinishni oldini olish, mehnat sharoitlarini sog‘lomlashtirish "
+"tadbirlarini ishlab chiqish;\n"
+"\t\t\t\t\t\t\t\t\n"
+"\t\t\t\t\t\t\t\tO‘zbekiston Respublikasi Vazirlar Mahkamasining 1994 yil 12 "
+"maydagi 250-son qarori bilan tasdiqlangan O‘zbekiston Respublikasi "
+"«Fuqarolarni davlat pensiya ta'minoti haqida»gi qonuniga asosan imtiyozli "
+"davlat pensiya ta'minoti huquqini beruvchi 1, 2 va 3-son ro‘yxatlariga "
+"ishlab chiqarish, muassasa, ish, kasb, lavozim va ko‘rsatkichlarini "
+"taaluqliligini asoslash;\n"
+"\t\t\t\t\t\t\t\t\n"
+"\t\t\t\t\t\t\t\tKorxonada noqulay va alohida tusdagi mehnat sharoitida "
+"ishlagani uchun yillik qo‘shimcha ta'til kunlari va qiskartirilgan ish vaqti "
+"davomiyligi huquqini beruvchi ish, kasb va lavozimlar ro‘yxatlarini "
+"aniqlash;\n"
+"\t\t\t\t\t\t\t\t\n"
+"\t\t\t\t\t\t\t\tXodimni noqulay mehnat sharoitida ishlagani uchun imtiyozli "
+"davlat pensiya ta'minotiga huquqi mavjudligi yoki yo‘kligini tasdiqlash "
+"(belgilash);\n"
+"\t\t\t\t\t\t\t\t\n"
+"\t\t\t\t\t\t\t\tishlab chiqarishda jarohatlanish va kasb kasalliklariga "
+"chalinishni oldini olish, mehnat sharoitlarini sog‘lomlashtirish "
+"tadbirlarini ishlab chiqish uchun zarur."
+msgstr ""
+"The main purpose of attestation of workplaces is the implementation of the "
+"constitutional rights of citizens to healthy and safe working conditions "
+"that meet sanitary and hygienic standards;Justify the degree of harmfulness "
+"of working conditions and occupational hazards and to what class they belong;"
+"Prevention of industrial injuries and diseases, development of measures to "
+"improve working conditions;According to the Law of the Republic of "
+"Uzbekistan On State Pension Provision of Citizens, approved by the "
+"Resolution of the Cabinet of Ministers of the Republic of Uzbekistan dated "
+"May 12, 1994 No. 250 to lists No. 1, 2. and 3, substantiation of the "
+"relevance of production, institution, work, profession, position and "
+"indicators; Determine the lists of jobs, professions and positions that give "
+"the employee the right to additional annual leave and reduced working hours "
+"for working in inconvenient and isolated working conditions; Confirmation "
+"(determination) of the employee's right to a preferential state pension for "
+"work in unfavorable working conditions;prevent work-related injuries and "
+"occupational diseases, and develop measures to improve working conditions."
+
+#: .\templates\index.html:358
+msgid "Ish joylarni attestasiyadan o‘tkazishga kim mas'ul?"
+msgstr "Who is responsible for the certification of workplaces?"
+
+#: .\templates\index.html:364
+#, fuzzy
+#| msgid ""
+#| "Ish joylarni attestasiyadan o‘z vaqtida va sifatli o‘tkazish uchun "
+#| "korxonaraxbari (ish beruvchi) mas'ul."
+msgid ""
+"Ish joylarni attestasiyadan o‘z vaqtida va sifatli o‘tkazish uchun korxona "
+"raxbari (ish beruvchi) mas'ul."
+msgstr ""
+"The head of the enterprise (employer) is responsible for the timely and high-"
+"quality certification of workplaces."
+
+#: .\templates\index.html:372
+msgid ""
+"Ish joylarning attestasiyadan o‘tkazish qaysi davrda amalga oshirilishi "
+"lozim?"
+msgstr "When to carry out certification of workplaces ?"
+
+#: .\templates\index.html:378
+msgid ""
+"Attestasiyadan o‘tkazish davriyligi korxona tomonidan belgilanadi, lekin 5 "
+"yilda bir martadan kam bo‘lmasligi kerak."
+msgstr ""
+"The frequency of certification is determined by the company, but at least "
+"once every 5 years."
+
+#: .\templates\index.html:540
+msgid "F.I.O"
+msgstr "Full name"
+
+#: .\templates\index.html:543
+msgid "E-Mail"
+msgstr "E-Mail"
+
+#: .\templates\index.html:546
+#, fuzzy
+#| msgid "Telefon"
+msgid "Telefon"
+msgstr "Phone"
+
+#: .\templates\index.html:549
+msgid "Mavzu"
+msgstr "Subject"
+
+#: .\templates\index.html:552
+msgid "Matn..."
+msgstr "Text"
+
+#: .\templates\index.html:555
+msgid "Yuborish"
+msgstr "Send message"
+
+#: .\templates\madhiya.html:14
+msgid "MADHIYA"
+msgstr "ANTHEM"
+
+#: .\templates\madhiya.html:23
+msgid "O‘ZBEKISTON RESPUBLIKASINING DAVLAT MADHIYASI"
+msgstr "STATE ANTHEM OF THE REPUBLIC OF UZBEKISTAN"
+
+#: .\templates\madhiya.html:24
+msgid ""
+"“O‘zbekiston Respublikasining davlat madhiyasi” to‘g‘risidagi qonun 1992 yil "
+"10 dekabrda O‘zbekiston Respublikasi Oliy Kengashining O‘n birinchi "
+"sessiyasida qabul qilingan."
+msgstr ""
+"The national anthem of the Republic of Uzbekistan is a symbol of state "
+"sovereignty of the Republic of Uzbekistan.The Law On the National Anthem of "
+"the Republic of Uzbekistan was adopted on December 10, 1992 at the eleventh "
+"session of the Supreme Council of the Republic of Uzbekistan."
+
+#: .\templates\madhiya.html:25
+msgid "Mutal Burhonov musiqasi <br>Abdulla Oripov so‘zi"
+msgstr "Music-Mutala Burkhonova Words-Abdulla Oripova"
+
+#: .\templates\madhiya.html:26
+#, fuzzy
+#| msgid ""
+#| "Serquyosh hur o‘lkam, elga baxt, najot, <br>Sen o‘zing do‘stlarga "
+#| "yo‘ldosh, mehribon! <br>Yashnagay to abad ilmu fan, ijod,<br>Shuhrating "
+#| "porlasin toki bor "
+msgid ""
+"Serquyosh hur o‘lkam, elga baxt, najot, <br>Sen o‘zing do‘stlarga yo‘ldosh, "
+"mehribon! <br>Yashnagay to abad ilmu fan, ijod, <br>Shuhrating porlasin toki "
+"bor jahon!"
+msgstr "-"
+
+#: .\templates\madhiya.html:27 .\templates\madhiya.html:30
+msgid "Naqarot:"
+msgstr ""
+
+#: .\templates\madhiya.html:28 .\templates\madhiya.html:31
+msgid ""
+"Oltin bu vodiylar - jon O‘zbekiston, <br>Ajdodlar mardona ruhi senga yor! "
+"<br>Ulug‘ xalq qudrati jo‘sh urgan zamon, <br>Olamni mahliyo aylagan diyor!"
+msgstr ""
+
+#: .\templates\madhiya.html:29
+msgid ""
+"Bag‘ri keng O‘zbekning O‘chmas iymoni, <br>Erkin, yosh avlodlar senga zo‘r "
+"qanot! <br>Istiqlol mash'ali tinchlik posboni, <br>Xaqsevar, ona yurt, mangu "
+"bo‘l obod!"
+msgstr ""
+
+#: .\templates\managment.html:25 .\templates\sections.html:25
+msgid "Tarjimai hol"
+msgstr "Biography "
+
+#: .\templates\managment.html:26 .\templates\sections.html:26
+msgid "Funksiya va vazifalar"
+msgstr "Functions and tasks"
+
+#: .\templates\news.html:62
+msgid "Davomi..."
+msgstr "Read more..."
+
+#: .\templates\regional.html:19 .\templates\regional.html:21
+msgid "Manzil:"
+msgstr "Address:"
+
+#: .\templates\regional.html:20
+msgid "Boshqarma boshlig\\"
+msgstr "Head of Department"
+
+#: .\templates\regional.html:22 .\templates\sections.html:21
+msgid "Telefon:"
+msgstr "Phone"
+
+#: .\templates\search.html:40
+msgid "Qidiruv bo\\"
+msgstr "No search results found:)"
+
+#: .\templates\sections.html:22
+#, fuzzy
+#| msgid "Qabulxona"
+msgid "Qabul kunlari:"
+msgstr "Reception"

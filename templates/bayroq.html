@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+{% load i18n %}
+<main id="main">
+
+    <!-- ======= Breadcrumbs Section ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>{% trans 'BAYROQ' %}</h2>
+         
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs Section -->
+
+    <section class="inner-page">
+      <div class="container">
+		<p style="text-align: center;"><strong>{% trans 'O‘ZBEKISTON RESPUBLIKASINING DAVLAT BAYROG‘I' %}</strong></p>
+<p><strong><img style="display: block; margin-left: auto; margin-right: auto;" src="{% static '/images/bayroq.gif' %}" alt="bayroq"></strong></p>
+<p style="text-align: justify;">{% blocktranslate %} “O‘zbekiston Respublikasi Davlat bayrog‘i to‘g‘risida”gi qonun 1991 yil 18 noyabrda O‘zbekiston Respublikasi Oliy Kengashining navbatdan tashqari O‘tkazilgan VII sessiyasida qabul qilingan. {% endblocktranslate %} </p>
+<p style="text-align: justify;">{% blocktranslate %} Davlat bayrog‘i va uning ramzi bugungi O‘zbekiston sarhadida qadimda mavjud bo‘lgan davlatlar bilan tarixan bog‘liqligini anglatadi hamda respublikaning milliy-madaniy an'analarini o‘zida mujassamlashtiradi.' {% endblocktranslate %} </p>
+<p style="text-align: justify;">{% blocktranslate %} Bayroqdagi moviy rang tiriklik mazmuni aks etgan mangu osmon va obihayot ramzi. Timsollar tilida bu – yaxshilikni, donishmandlikni, halollikni, shon-shuhrat va sadoqatni bildiradi. Binobarin, Amir Temur davlati bayrog‘ining rangi ham moviy rangda edi. Bayroqdagi oq rang – muqaddas tinchlik ramzi bo‘lib, u kun charog‘onligi va koinot yoritqichlari bilan uyg‘unlashib ketadi. Oq rang – poklik, beg‘uborlik, soflikni, orzu va hayollar tozaligi, ichki go‘zallikka intilishning timsoli.' {% endblocktranslate %} </p>
+<p style="text-align: justify;">{% blocktranslate %} Yashil rang – tabiatning yangilanish ramzi. U ko‘pgina xalqlarda navqironlik, umid va shodumonlik timsoli hisoblanadi. Qizil chiziqlar – vujudimizda jo‘shib oqayotgan hayotiy qudrat irmoqlarini anglatadi.' {% endblocktranslate %} </p>
+<p style="text-align: justify;">{% blocktranslate %} Navqiron yarim oy tasviri bizning tarixiy an'analarimiz bilan bog‘liq. Ayni paytda u qo‘lga kiritilgan mustaqilligimiz ramzi ham.Yulduzlar barcha uchun ruhoniy, ilohiy timsol sanalgan. O‘zbekiston Respublikasi Davlat bayrog‘idagi 12 yulduz tasviri ham tarixiy an'analarimiz, qadimgi yilnomamizga bevosita aloqador. Bizning O‘n ikki yulduzga bo‘lgan e'tiborimiz O‘zbekiston sarhadidagi qadimgi davlatlar ilmiy tafakkurida nujum ilmi taraqqiy etganligi bilan ham izohlanadi.' {% endblocktranslate %} </p>
+<p style="text-align: justify;">{% blocktranslate %} Davlat bayrog‘imizdagi 12 yulduz tasvirini o‘zbek xalqi madaniyatining qadimiyligi, uning komillikka, o‘z tuprog‘ida saodatga intilishi ramzi sifatida tushunish lozim.' {% endblocktranslate %} </p>
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+  
+{% endblock content %} 

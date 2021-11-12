@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 {% load static %}
+{% load i18n %}
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Jirono - IT Solutions and Corporate Template</title>
+	<title>{% trans 'Samarqand viloyati'  %} | {% trans 'Bandlik bosh boshqarmasi'  %}</title>
 	<meta name="description" content="Jirono - IT Solutions and Corporate template by tempload." />
 	<meta name="keywords" content="Jirono, startup, saas, agency, development, html, template, tempload" />
 	<meta name="author" content="tempload"/>
@@ -87,43 +88,69 @@
 	<div class="minicontainer">
 		<div class="block left d-none d-md-block">
 		  <div class="stateSymbols">
-			  <a target="_blank" rel="noopener noreferrer" href="oz/pages/bayroq.html"><i>
+			  <a target="_blank" rel="noopener noreferrer" href="{% url 'bayroq' %}"><i>
 			  <img src="{% static 'images/flag.png' %}" alt=""></i>
 				  <span>Bayroq</span></a>
-			  <a target="_blank" rel="noopener noreferrer" href="oz/pages/gerb.html"><i>
+			  <a target="_blank" rel="noopener noreferrer" href="{% url 'gerb' %}"><i>
 			  <img src="{% static 'images/gerb.png' %}" alt=""></i>
 				  <span>Gerb</span></a>
-			  <a target="_blank" rel="noopener noreferrer" href="oz/pages/madhiya.html"><i>
+			  <a target="_blank" rel="noopener noreferrer" href="{% url 'madhiya' %}"><i>
 			  <img src="{% static 'images/gymn.png' %}" alt=""></i>
 				  <span>Madhiya</span></a>
 		  </div>
+		  <!-- <form action="{% url 'set_language' %}" method="post">{% csrf_token %}
+			<input name="next" type="hidden" value="{{ redirect_to }}">
+			<select name="language">
+				{% get_current_language as LANGUAGE_CODE %}
+				{% get_available_languages as LANGUAGES %}
+				{% get_language_info_list for LANGUAGES as languages %}
+				{% for language in languages %}
+					<option value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %}
+							selected{% endif %}>
+						{{ language.id }} ({{ language.code }})
+					</option>
+				{% endfor %}
+			</select>
+			<input type="submit" value="Go">
+		</form> -->
 		  <ul class="languages">
-			  <li class="active">
-				  <a hreflang="oz" href="oz.html">O’zb</a>
+			{% get_current_language as LANGUAGE_CODE %}
+			{% get_available_languages as LANGUAGES %}
+			{% get_language_info_list for LANGUAGES as language %}
+			{% for lang in language %}
+			{% if lang.code == 'uz' %}
+			  <li class="">
+			
+				  <a hreflang="oz" href="/uz/">O’zb</a>
 			  </li>
+			{% elif lang.code == 'ko' %}
 			  <li>
-				  <a hreflang="uz" href="uz.html">Ўзб</a>
+				  <a hreflang="uz" href="/ko/">Ўзб</a>
 			  </li>
+			{% elif lang.code == 'ru' %}
 			  <li>
-				  <a hreflang="ru" href="ru.html">Рус</a>
+				  <a hreflang="ru" href="/ru/">Рус</a>
 			  </li>
+			{% elif lang.code == 'en' %}
 			  <li>
-				  <a hreflang="en" href="en.html">Eng</a>
+				  <a hreflang="en" href="/en/">Eng</a>
 			  </li>
+			  {% endif %}
+			  {% endfor %} 
 		  </ul>
 		</div>
 		<div class="block right d-none d-md-block">
 					<div class="footer-top mt-2">
 					<div class="footer-links" data-aos="fade-up" data-aos-delay="300">            
-					  <span>Bizning ijtimoiy tarmoqlar</span>
+					  <span>{% trans 'Bizning ijtimoiy tarmoqlar' %}</span>
 					  <div class="social-links mt-1">
 						<a href="#" class="telegram"><i class="bx bxl-telegram"></i></a>
 						<a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
 						<a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
 
 						<div style="padding-top: 10px;padding-bottom: 5px;">
-							<form class="form-inline my-2 my-lg-0">
-								<input class="form-control mr-sm-2" type="search" placeholder="Qidiruv..." aria-label="Search">
+							<form action="{% url 'search' %}" method="get" class="form-inline my-2 my-lg-0">
+								<input name="q" class="form-control mr-sm-2" type="text" placeholder="{% trans 'Qidiruv...' %}" aria-label="Search">
 								<button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fa fa-search"></i></button>
 							  </form>
 					  </div>
@@ -133,7 +160,7 @@
 			  </div>				  
 		</div>
 		<div class="logo">
-		   <a href="index.html"><img src="{% static 'images/logo-oz.svg' %}" width="300" alt="" class=""></a>
+		   <a href="/"><img src="{% static 'images/photo_2021-11-11_08-29-51.jpg' %}" width="300" alt="" class=""></a>
 		</div>
 	</div>
 </div>	
@@ -144,73 +171,73 @@
 <nav class="nav-menu d-none d-lg-block" style="padding-left: 120px;">
   <ul class="mainq" >    
 
-   <li class="drop-down"><a href="#">Boshqarma</a> 
+   <li class="drop-down"><a href="#">{% trans 'Boshqarma' %}</a> 
 	  <ul class="menu2">          	 
 				   <!-- <li><a href="#">Boshqarma tuzilmasi</a></li> -->
 						 
-				   <li><a href="{% url 'management' %}">Rahbariyat</a></li>
+				   <li><a href="{% url 'management' %}">{% trans 'Rahbariyat' %}</a></li>
 						 
-				   <li><a href="{% url 'section' %}">Bo`limlar</a></li>
+				   <li><a href="{% url 'section' %}">{% trans 'Bo`limlar' %}</a></li>
 						 
-				   <li><a href="{% url 'regional' %}">Hududiy markazlar</a></li>
+				   <li><a href="{% url 'regional' %}">{% trans 'Hududiy markazlar' %}</a></li>
 						 
 				   <!-- <li><a href="#">Boshqarma tarixi</a></li> -->
 						 
 	 </ul></li>
-<li class="drop-down"><a href="#">Faoliyat yo`nalishlari</a> 
+<li class="drop-down"><a href="#">{% trans 'Faoliyat yo`nalishlari' %}</a> 
 	  <ul class="menu2">          	 
-				   <li><a href="oz/pages/pagef620.html?url=faoliyat">Bandlik</a></li>
+				   <li><a href="oz/pages/pagef620.html?url=faoliyat">{% trans 'Bandlik' %}</a></li>
 						 
-				   <li><a href="oz/pages/page47d4.html?url=muhofaza">Mehnat muhofazasi</a></li>
+				   <li><a href="oz/pages/page47d4.html?url=muhofaza">{% trans 'Mehnat muhofazasi' %}</a></li>
 						 
-				   <li><a href="#">Mehnat inspeksiyasi</a></li>
+				   <li><a href="#">{% trans 'Mehnat inspeksiyasi' %}</a></li>
 						 
-				   <li><a href="#">Mehnat migratsiyasi</a></li>
+				   <li><a href="#">{% trans 'Mehnat migratsiyasi' %}</a></li>
 						 
 	 </ul></li>
-<li class="drop-down"><a href="oz/index.html#news">Matbuot markazi</a> 
+<li class="drop-down"><a href="oz/index.html#news">{% trans 'Matbuot markazi' %}</a> 
 	  <ul class="menu2">          	 
-				   <li><a href="{% url 'news' %}">Barcha yangiliklar</a></li>
+				   <li><a href="{% url 'news' %}">{% trans 'Barcha yangiliklar' %}</a></li>
 						 
-				   <li><a href="{% url 'gmenyu' %}#faq">Ko`p beriladigan savollar</a></li>
+				   <li><a href="{% url 'gmenyu' %}#faq">{% trans 'Ko`p beriladigan savollar' %}</a></li>
 						 
-				   <li><a href="#">Telegram</a></li>
+				   <li><a href="#">{% trans 'Telegram' %}</a></li>
 						 
-				   <li><a href="#">Facebook</a></li>
+				   <li><a href="#">{% trans 'Facebook' %}</a></li>
 						 
-				   <li><a href="#">Instagram</a></li>
+				   <li><a href="#">{% trans 'Instagram' %}</a></li>
 						 
 				   <!-- <li><a href="oz/pages/media.html">Media</a></li> -->
 						 
 	 </ul></li>
-<li class="drop-down"><a href="#">Qabulxona</a> 
+<li class="drop-down"><a href="#">{% trans 'Qabulxona' %}</a> 
 	  <ul class="menu2">          	 
-				   <li><a href="#">Onlayn qabulga yozilish</a></li>
+				   <li><a href="#">{% trans 'Onlayn qabulga yozilish' %}</a></li>
 						 
-				   <li><a href="#">Qabul jadvali</a></li>
+				   <li><a href="#">{% trans 'Qabul jadvali' %}</a></li>
 						 
-				   <li><a href="#">Telefon raqamlar ma`lumoti</a></li>
+				   <li><a href="#">{% trans 'Telefon raqamlar ma`lumoti' %}</a></li>
 						 
 	 </ul></li>
-<li class="drop-down"><a href="#">Me`yoriy-huquqiy hujjatlar</a> 
+<li class="drop-down"><a href="#">{% trans 'Me`yoriy-huquqiy hujjatlar' %}</a> 
 	  <ul class="menu2">          	 
-				   <li><a href="https://mehnat.uz/oz/documents/ozbekiston-respublikasi-qonunlari">O`zbekiston Respublikasi Qonunlari</a></li>
+				   <li><a href="https://mehnat.uz/oz/documents/ozbekiston-respublikasi-qonunlari">{% trans 'O`zbekiston Respublikasi Qonunlari' %}</a></li>
 						 
-				   <li><a href="https://mehnat.uz/oz/documents/ozbekiston-respublikasi-prezidentining-farmon-va-qarorlari">O`zbekiston Respublikasi Prezidentining farmon va qarorlari</a></li>
+				   <li><a href="https://mehnat.uz/oz/documents/ozbekiston-respublikasi-prezidentining-farmon-va-qarorlari">{% trans 'O`zbekiston Respublikasi Prezidentining farmon va qarorlari' %}</a></li>
 						 
-				   <li><a href="https://mehnat.uz/oz/documents/ozbekiston-respublikasi-vazirlar-mahkamasining-qarorlari">O`zbekiston Respublikasi Vazirlar Mahkamasining qarorlari</a></li>
+				   <li><a href="https://mehnat.uz/oz/documents/ozbekiston-respublikasi-vazirlar-mahkamasining-qarorlari">{% trans 'O`zbekiston Respublikasi Vazirlar Mahkamasining qarorlari' %}</a></li>
 						 
-				   <li><a href="https://mehnat.uz/oz/documents/ozbekiston-respublikasi-bandlik-va-mehnat-munosabatlari-vazirligi-meyoriy-hujjatlari">O‘zbekiston Respublikasi Bandlik va mehnat munosabatlari vazirligi me`yoriy hujjatlari</a></li>
+				   <li><a href="https://mehnat.uz/oz/documents/ozbekiston-respublikasi-bandlik-va-mehnat-munosabatlari-vazirligi-meyoriy-hujjatlari">{% trans 'O‘zbekiston Respublikasi Bandlik va mehnat munosabatlari vazirligi me`yoriy hujjatlari' %}</a></li>
 						 
-				   <li><a href="https://mehnat.uz/oz/documents/ozbekiston-respublikasi-adliya-vazirligi-royxatidan-otgan-meyoriy-huquqiy-xujjatlar">O‘zbekiston Respublikasi Adliya vazirligi ro‘yxatidan o‘tgan me`yoriy-huquqiy xujjatlar</a></li>
+				   <li><a href="https://mehnat.uz/oz/documents/ozbekiston-respublikasi-adliya-vazirligi-royxatidan-otgan-meyoriy-huquqiy-xujjatlar">{% trans 'O‘zbekiston Respublikasi Adliya vazirligi ro‘yxatidan o‘tgan me`yoriy-huquqiy xujjatlar' %}</a></li>
 						 
-				   <li><a href="https://mehnat.uz/oz/pages/korrupsiyaga-qarshi-kurashish">Korrupsiyaga qarshi kurashish</a></li>
+				   <li><a href="https://mehnat.uz/oz/pages/korrupsiyaga-qarshi-kurashish">{% trans 'Korrupsiyaga qarshi kurashish' %}</a></li>
 						 
 	 </ul></li>
 <!-- <li class="drop-down"><a href="#">Vakansiya</a> 
 	  <ul class="menu2">          	 
 	 </ul></li> -->
-<li class="drop-down" ><a href="{% url 'gmenyu' %}#contact">Bog`lanish</a> 
+<li class="drop-down" ><a href="{% url 'gmenyu' %}#contact">{% trans 'Bog`lanish' %}</a> 
 	  <ul class="menu2">          	 
 	 </ul></li>
  </ul></li>

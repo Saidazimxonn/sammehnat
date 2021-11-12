@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 {% load static %}
+{% load i18n %}
 {% block content %}
 
 
@@ -21,7 +22,7 @@
 			
 				<div class="row">
 					<div class="col-lg-5 col-md-12 col-sm-12 align-self-left" style="margin-top: 50px;" >
-						<h1 style="font-size: 58px;color: rgb(36, 35, 35); text-secondary;line-height: 50px;">O‘zbekiston Respublikasi Bandlik va mehnat munosabatlari vazirligi <br> <b  style="font-size: 30px;color: rgb(146, 140, 140);">Samarqand viloyati Bandlik bosh boshqarmasi</b> </h1>
+						<h1 style="font-size: 65px;color: rgb(36, 35, 35); text-secondary;line-height: 55px;">{% blocktranslate  %}O‘zbekiston Respublikasi Bandlik va mehnat munosabatlari vazirligi {% endblocktranslate  %}<br> <b  style="font-size: 30px;color: rgb(146, 140, 140);">{% blocktranslate  %}Samarqand viloyati Bandlik bosh boshqarmasi{% endblocktranslate  %}</b> </h1>
 						<p>
 
 						</p>
@@ -40,8 +41,8 @@
 								<img src="{% static 'assets1/images/photos/home/scale_1200.jpg' %}" alt="">
 								<div class="content">
 									<div class="text">
-										<strong style="font-size: 17px;">O‘zbekiston Respublikasi Bandlik va mehnat munosabatlari vazirligi</strong>
-										<p style="font-size: 20px;">“Yangi o'zbekistonda erkin va farovon yashaylik”</p>
+										<strong style="font-size: 17px;">{% blocktranslate  %}O‘zbekiston Respublikasi Bandlik va mehnat munosabatlari vazirligi{% endblocktranslate  %}</strong>
+										<p style="font-size: 20px;">{% blocktranslate  %}“Yangi o'zbekistonda erkin va farovon yashaylik”{% endblocktranslate  %}</p>
 									</div>
 								</div>
 							</div>
@@ -58,7 +59,7 @@
 	<!-- ***** Davlat xizmatlari Start ***** -->
 	<section class="section padding-top-0">
 		<div class="container">
-			<p class="text-center font-weight-bold p-2" style="font-size:30px;">Davlat xizmatlari</p>
+			<p class="text-center font-weight-bold p-2" style="font-size:30px;">{% trans 'Davlat xizmatlari' %}</p>
 			<div class="row">
 				
 				<div class="col-lg-12">
@@ -69,7 +70,7 @@
 								<div class="icon">
 									<i class="fa fa-search"></i>
 								</div>
-								<h5 class="features-title pb-4">O'zbekistonda ish topish</h5>
+								<h5 class="features-title pb-4">{% blocktranslate %}O'zbekistonda ish topish{% endblocktranslate %}</h5>
 							<!-- <p>Morbilling pharetra sapiening ut mattis viverra. Curabitur magna.</p> -->
 							</a>
 						</div>
@@ -81,7 +82,7 @@
 								<div class="icon">
 									<i class="fa fa-briefcase"></i>
 								</div>
-								<h5 class="features-title  pb-4">Ishga joylashganim tarixi</h5>
+								<h5 class="features-title  pb-4">{% trans 'Ishga joylashganim tarixi' %}</h5>
 								
 							</a>
 						</div>
@@ -93,7 +94,7 @@
 								<div class="icon">
 									<i class="fa fa-edit"></i>
 								</div>
-								<h5 class="features-title" style="padding-bottom: 5px;">Davlat mehnat inspeksiyasiga murojaat qilish</h5>
+								<h5 class="features-title" style="padding-bottom: 5px;">{% trans 'Davlat mehnat inspeksiyasiga murojaat qilish' %}</h5>
 								
 							</a>
 						</div>
@@ -105,7 +106,7 @@
 								<div class="icon">
 									<i class="fa fa-list-alt"></i>
 								</div>
-								<h5 class="features-title">Yuridik shaxslar uchun Mehnat shartnomasini onlayn rasmiylashtirish</h5>
+								<h5 class="features-title">{% trans 'Yuridik shaxslar uchun Mehnat shartnomasini onlayn rasmiylashtirish' %}</h5>
 							</a>
 						</div>
 						<!-- ***** Features Small Item End ***** -->
@@ -115,7 +116,7 @@
 									<div class="icon">
 										<i class="fa fa-user"></i>
 									</div>
-									<h5 class="features-title " style="padding-bottom: 24px;">Yuridik shaxslar uchun Ishchi topish</h5>
+									<h5 class="features-title " style="padding-bottom: 24px;">{% trans 'Yuridik shaxslar uchun Ishchi topish' %}</h5>
 								</a>
 							</div>
 							<!-- ***** Features Small Item End ***** -->
@@ -125,7 +126,7 @@
 								<div class="icon">
 									<i class="fa fa-folder-open"></i>
 								</div>
-								<h5 class="features-title">Yuridik shaxslar uchun XBAni xususiy bandlik agentliklari reestriga kiritish</h5>
+								<h5 class="features-title">{% trans 'Yuridik shaxslar uchun XBAni xususiy bandlik agentliklari reestriga kiritish' %}</h5>
 							</a>
 						</div>
 						<!-- ***** Features Small Item End ***** -->
@@ -138,7 +139,7 @@
 
 	<!-- ***** Davlat mehnat inspeksiyasi statistikasi Start ***** -->
 
-	<p class="text-center font-weight-bold p-2" style="font-size:30px;">Davlat mehnat inspeksiyasi statistikasi</p>
+	<p class="text-center font-weight-bold p-2" style="font-size:30px;">{% trans 'Davlat mehnat inspeksiyasi statistikasi' %}</p>
 	<section class="parallax-counter" id="counter">
 		<div class="parallax-content">
 			<div class="container">
@@ -146,28 +147,28 @@
 					<div class="col-lg-3 col-md-6 col-sm-12">
 						<div class="count-item">
 							<strong>13426</strong>
-							<span>Jami
-								<br>murojaatlar</span>
+							<span>{% trans 'Jami' %}
+								<br>{% trans 'murojaatlar' %}</span>
 						</div>
 					</div>
 					<div class="col-lg-3 col-md-6 col-sm-12">
 						<div class="count-item">
 							<strong>8575</strong>
-							<span>Tekshirish
-								<br>va o'rganishlar</span>
+							<span>{% trans 'Tekshirish' %}
+								<br>{% trans 'va o\'rganishlar' %}</span>
 						</div>
 					</div>
 				<div class="col-lg-3 col-md-6 col-sm-12">
 						<div class="count-item">
 							<strong>7508</strong>
-							<span>Qanoatlantirilgan
-								<br>murojaatlar</span>
+							<span>{% trans 'Qanoatlantirilgan' %}
+								<br>{% trans 'murojaatlar' %}</span>
 						</div>
 					</div>
 					<div class="col-lg-3 col-md-6 col-sm-12">
 						<div class="count-item">
 							<strong>7444</strong>
-							<span>Solingan<br>jarimalar</span>
+							<span>{% trans 'Solingan' %}<br>{% trans 'jarimalar' %}</span>
 						</div>
 					</div>
 				</div>
@@ -180,7 +181,7 @@
 	<!-- ***** Davlat organlari saytlari Start ***** -->
 	<section class="section padding-bottom colored" id="features">
 		<div class="container">
-			<p class="text-center font-weight-bold p-3" style="font-size:30px;">Davlat organlari saytlari</p>
+			<p class="text-center font-weight-bold p-3" style="font-size:30px;">{% trans 'Davlat organlari saytlari' %}</p>
 
 			<div class="row">
 		
@@ -194,7 +195,7 @@
 											<img src="{% static 'assets1/images/photos/icons/mehnat.png' %}" alt="">
 										</div>
 										<div class="text">
-											<h5 class="services-title">O`zbekiston Respublikasi bandlik va mehnat munosabatlari vazirligi</h5>
+											<h5 class="services-title">{% blocktranslate %}O`zbekiston Respublikasi bandlik va mehnat munosabatlari vazirligi{% endblocktranslate %}</h5>
 										
 										</div>
 									</a>
@@ -205,7 +206,7 @@
 											<img src="{% static 'assets1/images/photos/icons/1554356554-vw5JOfarnhb0CSIuLPwA.png' %}" alt="">
 										</div>
 										<div class="text">
-											<h5 class="services-title">O`zbekiston respublikasi prezidentining rasmiy veb-sayti</h5>
+											<h5 class="services-title">{% blocktranslate %}O`zbekiston respublikasi prezidentining rasmiy veb-sayti{% endblocktranslate %}</h5>
 										</div>
 									</a>
 								</div>
@@ -215,7 +216,7 @@
 											<img src="{% static 'assets1/images/photos/icons/1554356596-JrBclGLvUNTXpw6qu6Zi.png' %}" alt="">
 										</div>
 										<div class="text">
-											<h5 class="services-title">Yagona interaktiv davlat xizmatlari portali</h5>
+											<h5 class="services-title">{% blocktranslate %}Yagona interaktiv davlat xizmatlari portali{% endblocktranslate %}</h5>
 											
 										</div>
 									</a>
@@ -226,7 +227,7 @@
 											<img src="{% static 'assets1/images/photos/icons/1554356696-rJQVDYoP0ZPRynaRV0mk.png' %}" alt="">
 										</div>
 										<div class="text">
-											<h5 class="services-title">O`zbekiston Respublikasi ochiq ma'lumotlar portali</h5>
+											<h5 class="services-title">{% blocktranslate %}O`zbekiston Respublikasi ochiq ma'lumotlar portali{% endblocktranslate %}</h5>
 											
 										</div>
 									</a>
@@ -237,7 +238,7 @@
 											<img src="{% static 'assets1/images/photos/icons/1554356634-Ad8lmd7jGMfHZiqAXTzR.png' %}" alt="">
 										</div>
 										<div class="text">
-											<h5 class="services-title">O`zbekiston Respublikasi Hukumat portali</h5>
+											<h5 class="services-title">{% blocktranslate %}O`zbekiston Respublikasi Hukumat portali{% endblocktranslate %}</h5>
 										
 										</div>
 									</a>
@@ -248,7 +249,7 @@
 											<img src="{% static 'assets1/images/photos/icons/yagona.png' %}" alt="">
 										</div>
 										<div class="text">
-											<h5 class="services-title">Yagona interaktiv davlat xizmatlari portali</h5>
+											<h5 class="services-title">{% blocktranslate %}Yagona interaktiv davlat xizmatlari portali{% endblocktranslate %}</h5>
 										
 										</div>
 									</a>
@@ -272,7 +273,7 @@
 	<!-- ***** Ko'p beriladigan savollar Start ***** -->
 	<section class="section padding-bottom-80 colored" id="faq" id="features">
 		<div class="container">
-			<p class="text-center font-weight-bold p-2" style="font-size:30px;">Ko'p beriladigan savollar</p>
+			<p class="text-center font-weight-bold p-2" style="font-size:30px;">{% blocktranslate %}Ko'p beriladigan savollar{% endblocktranslate %}</p>
 			
 			<div class="row">
 				<div class="col-lg-12 col-md-12 col-sm-12 align-self-center mobile-bottom-fix">
@@ -281,14 +282,14 @@
 						  <div class="card-header" id="headingOne">
 							<h2 class="mb-0">
 							  <button class="btn btn-link btn-block text-left " type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-								<i class="fa fa-question-circle fa-2x pr-2 "></i>Ish joylarni attestasiyadan o‘tkazish – bu nima?
+								<i class="fa fa-question-circle fa-2x pr-2 "></i>{% blocktranslate %}Ish joylarni attestasiyadan o‘tkazish – bu nima?{% endblocktranslate %}
 							  </button>
 							</h2>
 						  </div>
 					  
 						  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
 							<div class="card-body">
-								Ish joylarni attestasiyadan o`tkazish – ishlab chiqarish muhitidagi fizikaviy, kimyoviy, biologik omillarni, ish joyida mehnat jarayonidagi og`irlik va zo`riqishni sinov asboblarida kompleks o`rganish, uskunalarning jarohat yetkazish xavfini aniqlash jarayonidir.
+								{% blocktranslate %}Ish joylarni attestasiyadan o`tkazish – ishlab chiqarish muhitidagi fizikaviy, kimyoviy, biologik omillarni, ish joyida mehnat jarayonidagi og`irlik va zo`riqishni sinov asboblarida kompleks o`rganish, uskunalarning jarohat yetkazish xavfini aniqlash jarayonidir.{% endblocktranslate %}
 							</div>
 						  </div>
 						</div>
@@ -296,13 +297,13 @@
 						  <div class="card-header" id="headingTwo">
 							<h2 class="mb-0">
 							  <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-								<i class="fa fa-question-circle fa-2x pr-2"></i>Ish joylarning attestasiyadan o`tkazish qayerda o`tkaziladi?
+								<i class="fa fa-question-circle fa-2x pr-2"></i>{% blocktranslate %}Ish joylarning attestasiyadan o`tkazish qayerda o`tkaziladi?{% endblocktranslate %}
 							  </button>
 							</h2>
 						  </div>
 						  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
 							<div class="card-body">
-								O‘zbekiston Respublikasi Adliya vazirligida 28 may 1996 yilda 247-raqam bilan ro‘yxatga olingan “Mehnat sharoitlarini baxolash, mehnat sharoitlari bo‘yicha ish joylarini attestasiyadan o‘tkazish uslubiyoti”ga muvofiq attestasiyadan o‘tkazish ishlari tashkiliy-huquqiy shakli, mulkchilik shakli va idoraviy bo‘ysunishidan qat'i nazar korxona va tashkilotlarda amalga oshiriladi.
+								{% blocktranslate %}O‘zbekiston Respublikasi Adliya vazirligida 28 may 1996 yilda 247-raqam bilan ro‘yxatga olingan “Mehnat sharoitlarini baxolash, mehnat sharoitlari bo‘yicha ish joylarini attestasiyadan o‘tkazish uslubiyoti”ga muvofiq attestasiyadan o‘tkazish ishlari tashkiliy-huquqiy shakli, mulkchilik shakli va idoraviy bo‘ysunishidan qat'i nazar korxona va tashkilotlarda amalga oshiriladi.{% endblocktranslate %}
 							</div>
 						  </div>
 						</div>
@@ -310,13 +311,13 @@
 						  <div class="card-header" id="headingThree">
 							<h2 class="mb-0">
 							  <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-								<i class="fa fa-question-circle fa-2x pr-2"></i>Nima uchun ish joylarni attestasiyadan o‘tkazish zarur?
+								<i class="fa fa-question-circle fa-2x pr-2"></i>{% blocktranslate %}Nima uchun ish joylarni attestasiyadan o‘tkazish zarur?{% endblocktranslate %}
 							  </button>
 							</h2>
 						  </div>
 						  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
 							<div class="card-body">
-								Ish joylarni attestasiyadan o‘tkazishning asosiy maqsadi, fuqarolarni sanitariya-gigiena me'yorlariga javob beruvchi sog‘lom va xavfsiz mehnat sharoitlariga bo‘lgan konstitusiyaviy huquqlarini ro‘yobga chiqarish;
+								{% blocktranslate %}Ish joylarni attestasiyadan o‘tkazishning asosiy maqsadi, fuqarolarni sanitariya-gigiena me'yorlariga javob beruvchi sog‘lom va xavfsiz mehnat sharoitlariga bo‘lgan konstitusiyaviy huquqlarini ro‘yobga chiqarish;
 
 								Ish joyi sharoitining zararliligi va mehnatning xavfliligi darajasini va qanday sinfga ta'aluqliligini asoslash;
 								
@@ -328,12 +329,12 @@
 								
 								Xodimni noqulay mehnat sharoitida ishlagani uchun imtiyozli davlat pensiya ta'minotiga huquqi mavjudligi yoki yo‘kligini tasdiqlash (belgilash);
 								
-								ishlab chiqarishda jarohatlanish va kasb kasalliklariga chalinishni oldini olish, mehnat sharoitlarini sog‘lomlashtirish tadbirlarini ishlab chiqish uchun zarur.
+								ishlab chiqarishda jarohatlanish va kasb kasalliklariga chalinishni oldini olish, mehnat sharoitlarini sog‘lomlashtirish tadbirlarini ishlab chiqish uchun zarur.{% endblocktranslate %}
 							</div>
 						  </div>
 						  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
 							<div class="card-body">
-								Ish joylarni attestasiyadan o‘tkazishning asosiy maqsadi, fuqarolarni sanitariya-gigiena me'yorlariga javob beruvchi sog‘lom va xavfsiz mehnat sharoitlariga bo‘lgan konstitusiyaviy huquqlarini ro‘yobga chiqarish;
+								{% blocktranslate %}Ish joylarni attestasiyadan o‘tkazishning asosiy maqsadi, fuqarolarni sanitariya-gigiena me'yorlariga javob beruvchi sog‘lom va xavfsiz mehnat sharoitlariga bo‘lgan konstitusiyaviy huquqlarini ro‘yobga chiqarish;
 
 								Ish joyi sharoitining zararliligi va mehnatning xavfliligi darajasini va qanday sinfga ta'aluqliligini asoslash;
 								
@@ -345,7 +346,7 @@
 								
 								Xodimni noqulay mehnat sharoitida ishlagani uchun imtiyozli davlat pensiya ta'minotiga huquqi mavjudligi yoki yo‘kligini tasdiqlash (belgilash);
 								
-								ishlab chiqarishda jarohatlanish va kasb kasalliklariga chalinishni oldini olish, mehnat sharoitlarini sog‘lomlashtirish tadbirlarini ishlab chiqish uchun zarur.
+								ishlab chiqarishda jarohatlanish va kasb kasalliklariga chalinishni oldini olish, mehnat sharoitlarini sog‘lomlashtirish tadbirlarini ishlab chiqish uchun zarur.{% endblocktranslate %}
 							</div>
 						  </div>
 						  
@@ -354,14 +355,13 @@
 							<div class="card-header" id="headingThree">
 							  <h2 class="mb-0">
 								<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
-									<i class="fa fa-question-circle fa-2x pr-2"></i>	Ish joylarni attestasiyadan o‘tkazishga kim mas'ul?
+									<i class="fa fa-question-circle fa-2x pr-2"></i>	{% blocktranslate %}Ish joylarni attestasiyadan o‘tkazishga kim mas'ul?{% endblocktranslate %}
 								</button>
 							  </h2>
 							</div>
 							<div id="collapse4" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
 							  <div class="card-body">
-								Ish joylarni attestasiyadan o‘z vaqtida va sifatli o‘tkazish uchun korxona raxbari (ish beruvchi) mas'ul.
-							  </div>
+								{% blocktranslate %}Ish joylarni attestasiyadan o‘z vaqtida va sifatli o‘tkazish uchun korxona raxbari (ish beruvchi) mas'ul.{% endblocktranslate %}</div>
 							</div>
 						
 							
@@ -369,13 +369,13 @@
 							<div class="card-header" id="headingThree">
 							  <h2 class="mb-0">
 								<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapse5e">
-									<i class="fa fa-question-circle fa-2x pr-2"></i>	Ish joylarning attestasiyadan o‘tkazish qaysi davrda amalga oshirilishi lozim?
+									<i class="fa fa-question-circle fa-2x pr-2"></i>	{% blocktranslate %}Ish joylarning attestasiyadan o‘tkazish qaysi davrda amalga oshirilishi lozim?{% endblocktranslate %}
 								</button>
 							  </h2>
 							</div>
 							<div id="collapse5" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
 							  <div class="card-body">
-								Attestasiyadan o‘tkazish davriyligi korxona tomonidan belgilanadi, lekin 5 yilda bir martadan kam bo‘lmasligi kerak.
+								{% blocktranslate %}Attestasiyadan o‘tkazish davriyligi korxona tomonidan belgilanadi, lekin 5 yilda bir martadan kam bo‘lmasligi kerak.{% endblocktranslate %}
 							  </div>
 							</div>
 						
@@ -521,9 +521,9 @@
 							
 									<div class="contact-text">
 										<h4>
-											O`zbekiston Respublikasi bandlik va mehnat munosabatlari vazirligi
+											{% blocktranslate %}O`zbekiston Respublikasi bandlik va mehnat munosabatlari vazirligi{% endblocktranslate %}
 										</h4>
-										<h4 style="font-weight: bolder;">Samarqand viloyati Bandlik bosh boshqarmasi</4>
+										<h4 style="font-weight: bolder;">{% blocktranslate %}Samarqand viloyati Bandlik bosh boshqarmasi{% endblocktranslate %}</4>
 									</div>
 								</div>
 								<!-- ***** Contact Text End ***** -->
@@ -537,22 +537,22 @@
 									<div class="contact-form">
 										<div class="row">
 											<div class="col-lg-6 col-md-12 col-sm-12">
-												<input type="text" name="name"  placeholder="F.I.O" required="required">
+												<input type="text" name="name"  placeholder="{% trans 'F.I.O' %}" required="required">
 											</div>
 											<div class="col-lg-6 col-md-12 col-sm-12">
-												<input type="text"  name="email" placeholder="E-Mail" required="required">
+												<input type="text"  name="email" placeholder="{% trans 'E-Mail' %}" required="required">
 											</div>
 											<div class="col-lg-6 col-md-12 col-sm-12">
-												<input type="text" name="phone" placeholder="Telefon" required="required">
+												<input type="text" name="phone" placeholder="{% trans 'Telefon' %}" required="required">
 											</div>
 											<div class="col-lg-6 col-md-12 col-sm-12">
-												<input type="text" name="message" placeholder="Mavzu" required="required">
+												<input type="text" name="message" placeholder="{% trans 'Mavzu' %}" required="required">
 											</div>
 											<div class="col-lg-12">
-												<textarea  name="message_long" placeholder="Matn..." required="required"></textarea>
+												<textarea  name="message_long" placeholder="{% trans 'Matn...' %}" required="required"></textarea>
 											</div>
 											<div class="col-lg-12">
-												<button class="btn-primary-line" type="submit">Yuborish</button>
+												<button class="btn-primary-line" type="submit"> {% trans 'Yuborish' %}</button>
 											</div>
 										</div>
 									</div>

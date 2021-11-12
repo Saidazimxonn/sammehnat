@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 {% load static %}
+{% load i18n %}
 {% block content %}
 <style>
 	.pagination {
@@ -58,7 +59,7 @@
               
 				</div>  
 			</a>
-				<a href="{% url 'news_d' post.id %}" class="btn btn-primary pt-2">Davomi...</a>
+				<a href="{% url 'news_d' post.id %}" class="btn btn-primary pt-2">{% trans 'Davomi...' %}</a>
 			  </div>
 			  </div>
 			  {% endfor %}

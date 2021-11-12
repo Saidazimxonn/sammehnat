@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+{% block content %}
+<main id="main">
+
+    <!-- ======= Breadcrumbs Section ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2 style="color: black;text-align: center;">{% trans 'GERB' %}</h2>
+     
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs Section -->
+
+    <section class="inner-page">
+      <div class="container">
+		<p style="text-align: center;"><strong>{% trans 'O‘ZBEKISTON RESPUBLIKASI DAVLAT GERBI' %}</strong></p>
+<p style="text-align: center;"><strong><img src="{% static '/images/gerb.gif' %}" alt="gerb"></strong></p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;">{% blocktranslate  %}“O‘zbekiston Respublikasi Davlat gerbi to‘g‘risida”gi qonun 1992 yil 2 iyulda O‘zbekiston Respublikasi Oliy Kengashining X sessiyasida qabul qilingan.<br>O‘zbekiston Respublikasining Davlat gerbi gullagan vodiy uzra charaqlab turgan quyosh tasviridan hamda so‘l tomonida bug‘doy boshoqlari, O‘ng tomonida ochilgan paxta chanoqlari suvrati tushirilgan chambardan iborat.{% endblocktranslate  %}</p>
+<p style="text-align: justify;">{% blocktranslate  %}Gerbning yuqori qismida respublika jipsligining ramzi sifatida sakkiz qirrali yulduz tasvirlangan: sakkiz qirra ichida joylashgan yarim oy va yulduz musulmonlarning qutlug‘ ramzidir.{% endblocktranslate  %}</p>
+<p style="text-align: justify;">{% blocktranslate  %}Gerbning markazida himmat, olijanoblik va fidoyilik timsoli bo‘lgan afsonaviy Humo qushi qanotlarini yozib turibdi. Ushbu ramz va timsollar xalqimizning tinchlik, yaxshilik, baxt-saodat, farovonlik yo‘lidagi orzu-umidlarini ifodalaydi.{% endblocktranslate  %}</p>
+<p style="text-align: justify;">{% blocktranslate  %}Gerbning pastki qismida respublika Davlat bayrog‘ini ifoda etuvchi chambar lentasining bandiga "O‘zbekiston" deb yozib qo‘yilgan.{% endblocktranslate  %}</p>
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+{% endblock content %} 

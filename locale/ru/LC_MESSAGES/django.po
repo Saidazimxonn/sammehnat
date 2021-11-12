@@ -1,0 +1,524 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-11-11 08:53+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
+"%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: .\config\settings.py:132
+msgid "Uzbek"
+msgstr ""
+
+#: .\config\settings.py:133
+msgid "Korean"
+msgstr ""
+
+#: .\config\settings.py:134
+msgid "Russian"
+msgstr ""
+
+#: .\config\settings.py:135
+msgid "English"
+msgstr ""
+
+#: .\templates\base.html:134
+msgid "Bizning ijtimoiy tarmoqlar"
+msgstr ""
+
+#: .\templates\base.html:142
+msgid "Qidiruv..."
+msgstr ""
+
+#: .\templates\base.html:163
+msgid "Boshqarma"
+msgstr ""
+
+#: .\templates\base.html:167
+msgid "Rahbariyat"
+msgstr ""
+
+#: .\templates\base.html:169
+msgid "Bo`limlar"
+msgstr ""
+
+#: .\templates\base.html:171
+msgid "Hududiy markazlar"
+msgstr ""
+
+#: .\templates\base.html:176
+msgid "Faoliyat yo`nalishlari"
+msgstr ""
+
+#: .\templates\base.html:178
+msgid "Bandlik"
+msgstr ""
+
+#: .\templates\base.html:180
+msgid "Mehnat muhofazasi"
+msgstr ""
+
+#: .\templates\base.html:182
+msgid "Mehnat inspeksiyasi"
+msgstr ""
+
+#: .\templates\base.html:184
+msgid "Mehnat migratsiyasi"
+msgstr ""
+
+#: .\templates\base.html:187
+msgid "Matbuot markazi"
+msgstr ""
+
+#: .\templates\base.html:189
+msgid "Barcha yangiliklar"
+msgstr ""
+
+#: .\templates\base.html:191
+msgid "Ko`p beriladigan savollar"
+msgstr ""
+
+#: .\templates\base.html:193
+msgid "Telegram"
+msgstr ""
+
+#: .\templates\base.html:195
+msgid "Facebook"
+msgstr ""
+
+#: .\templates\base.html:197
+msgid "Instagram"
+msgstr ""
+
+#: .\templates\base.html:202
+msgid "Qabulxona"
+msgstr ""
+
+#: .\templates\base.html:204
+msgid "Onlayn qabulga yozilish"
+msgstr ""
+
+#: .\templates\base.html:206
+msgid "Qabul jadvali"
+msgstr ""
+
+#: .\templates\base.html:208
+msgid "Telefon raqamlar ma`lumoti"
+msgstr ""
+
+#: .\templates\base.html:211
+msgid "Me`yoriy-huquqiy hujjatlar"
+msgstr ""
+
+#: .\templates\base.html:213
+msgid "O`zbekiston Respublikasi Qonunlari"
+msgstr ""
+
+#: .\templates\base.html:215
+msgid "O`zbekiston Respublikasi Prezidentining farmon va qarorlari"
+msgstr ""
+
+#: .\templates\base.html:217
+msgid "O`zbekiston Respublikasi Vazirlar Mahkamasining qarorlari"
+msgstr ""
+
+#: .\templates\base.html:219
+msgid ""
+"O‘zbekiston Respublikasi Bandlik va mehnat munosabatlari vazirligi me`yoriy "
+"hujjatlari"
+msgstr ""
+
+#: .\templates\base.html:221
+msgid ""
+"O‘zbekiston Respublikasi Adliya vazirligi ro‘yxatidan o‘tgan me`yoriy-"
+"huquqiy xujjatlar"
+msgstr ""
+
+#: .\templates\base.html:223
+msgid "Korrupsiyaga qarshi kurashish"
+msgstr ""
+
+#: .\templates\base.html:229
+msgid "Bog`lanish"
+msgstr ""
+
+#: .\templates\bayroq.html:12
+msgid "BAYROQ"
+msgstr ""
+
+#: .\templates\bayroq.html:21
+msgid "O‘ZBEKISTON RESPUBLIKASINING DAVLAT BAYROG‘I"
+msgstr ""
+
+#: .\templates\bayroq.html:23
+msgid ""
+" “O‘zbekiston Respublikasi Davlat bayrog‘i to‘g‘risida”gi qonun 1991 yil 18 "
+"noyabrda O‘zbekiston Respublikasi Oliy Kengashining navbatdan tashqari "
+"O‘tkazilgan VII sessiyasida qabul qilingan. "
+msgstr ""
+
+#: .\templates\bayroq.html:24
+msgid ""
+" Davlat bayrog‘i va uning ramzi bugungi O‘zbekiston sarhadida qadimda mavjud "
+"bo‘lgan davlatlar bilan tarixan bog‘liqligini anglatadi hamda respublikaning "
+"milliy-madaniy an'analarini o‘zida mujassamlashtiradi.' "
+msgstr ""
+
+#: .\templates\bayroq.html:25
+msgid ""
+" Bayroqdagi moviy rang tiriklik mazmuni aks etgan mangu osmon va obihayot "
+"ramzi. Timsollar tilida bu – yaxshilikni, donishmandlikni, halollikni, shon-"
+"shuhrat va sadoqatni bildiradi. Binobarin, Amir Temur davlati bayrog‘ining "
+"rangi ham moviy rangda edi. Bayroqdagi oq rang – muqaddas tinchlik ramzi "
+"bo‘lib, u kun charog‘onligi va koinot yoritqichlari bilan uyg‘unlashib "
+"ketadi. Oq rang – poklik, beg‘uborlik, soflikni, orzu va hayollar tozaligi, "
+"ichki go‘zallikka intilishning timsoli.' "
+msgstr ""
+
+#: .\templates\bayroq.html:26
+msgid ""
+" Yashil rang – tabiatning yangilanish ramzi. U ko‘pgina xalqlarda "
+"navqironlik, umid va shodumonlik timsoli hisoblanadi. Qizil chiziqlar – "
+"vujudimizda jo‘shib oqayotgan hayotiy qudrat irmoqlarini anglatadi.' "
+msgstr ""
+
+#: .\templates\bayroq.html:27
+msgid ""
+" Navqiron yarim oy tasviri bizning tarixiy an'analarimiz bilan bog‘liq. Ayni "
+"paytda u qo‘lga kiritilgan mustaqilligimiz ramzi ham.Yulduzlar barcha uchun "
+"ruhoniy, ilohiy timsol sanalgan. O‘zbekiston Respublikasi Davlat "
+"bayrog‘idagi 12 yulduz tasviri ham tarixiy an'analarimiz, qadimgi "
+"yilnomamizga bevosita aloqador. Bizning O‘n ikki yulduzga bo‘lgan "
+"e'tiborimiz O‘zbekiston sarhadidagi qadimgi davlatlar ilmiy tafakkurida "
+"nujum ilmi taraqqiy etganligi bilan ham izohlanadi.' "
+msgstr ""
+
+#: .\templates\bayroq.html:28
+msgid ""
+" Davlat bayrog‘imizdagi 12 yulduz tasvirini o‘zbek xalqi madaniyatining "
+"qadimiyligi, uning komillikka, o‘z tuprog‘ida saodatga intilishi ramzi "
+"sifatida tushunish lozim.' "
+msgstr ""
+
+#: .\templates\detail_news.html:53 .\templates\regional.html:46
+msgid "So`nggi yangiliklar"
+msgstr ""
+
+#: .\templates\gerb.html:12
+msgid "GERB"
+msgstr ""
+
+#: .\templates\gerb.html:21
+msgid "O‘ZBEKISTON RESPUBLIKASI DAVLAT GERBI"
+msgstr ""
+
+#: .\templates\gerb.html:24
+msgid ""
+"“O‘zbekiston Respublikasi Davlat gerbi to‘g‘risida”gi qonun 1992 yil 2 "
+"iyulda O‘zbekiston Respublikasi Oliy Kengashining X sessiyasida qabul "
+"qilingan.<br>O‘zbekiston Respublikasining Davlat gerbi gullagan vodiy uzra "
+"charaqlab turgan quyosh tasviridan hamda so‘l tomonida bug‘doy boshoqlari, "
+"O‘ng tomonida ochilgan paxta chanoqlari suvrati tushirilgan chambardan "
+"iborat."
+msgstr ""
+
+#: .\templates\gerb.html:25
+msgid ""
+"Gerbning yuqori qismida respublika jipsligining ramzi sifatida sakkiz "
+"qirrali yulduz tasvirlangan: sakkiz qirra ichida joylashgan yarim oy va "
+"yulduz musulmonlarning qutlug‘ ramzidir."
+msgstr ""
+
+#: .\templates\gerb.html:26
+msgid ""
+"Gerbning markazida himmat, olijanoblik va fidoyilik timsoli bo‘lgan "
+"afsonaviy Humo qushi qanotlarini yozib turibdi. Ushbu ramz va timsollar "
+"xalqimizning tinchlik, yaxshilik, baxt-saodat, farovonlik yo‘lidagi orzu-"
+"umidlarini ifodalaydi."
+msgstr ""
+
+#: .\templates\gerb.html:27
+msgid ""
+"Gerbning pastki qismida respublika Davlat bayrog‘ini ifoda etuvchi chambar "
+"lentasining bandiga \"O‘zbekiston\" deb yozib qo‘yilgan."
+msgstr ""
+
+#: .\templates\index.html:25
+msgid "O‘zbekiston Respublikasi Bandlik va mehnat munosabatlari vazirligi "
+msgstr ""
+
+#: .\templates\index.html:25 .\templates\index.html:527
+msgid "Samarqand viloyati Bandlik bosh boshqarmasi"
+msgstr ""
+
+#: .\templates\index.html:44
+msgid "O‘zbekiston Respublikasi Bandlik va mehnat munosabatlari vazirligi"
+msgstr ""
+
+#: .\templates\index.html:45
+msgid "“Yangi o'zbekistonda erkin va farovon yashaylik”"
+msgstr ""
+
+#: .\templates\index.html:62
+msgid "Davlat xizmatlari"
+msgstr ""
+
+#: .\templates\index.html:73
+msgid "O\\"
+msgstr ""
+
+#: .\templates\index.html:85
+msgid "Ishga joylashganim tarixi"
+msgstr ""
+
+#: .\templates\index.html:97
+msgid "Davlat mehnat inspeksiyasiga murojaat qilish"
+msgstr ""
+
+#: .\templates\index.html:109
+msgid "Yuridik shaxslar uchun Mehnat shartnomasini onlayn rasmiylashtirish"
+msgstr ""
+
+#: .\templates\index.html:119
+msgid "Yuridik shaxslar uchun Ishchi topish"
+msgstr ""
+
+#: .\templates\index.html:129
+msgid ""
+"Yuridik shaxslar uchun XBAni xususiy bandlik agentliklari reestriga kiritish"
+msgstr ""
+
+#: .\templates\index.html:142
+msgid "Davlat mehnat inspeksiyasi statistikasi"
+msgstr ""
+
+#: .\templates\index.html:150
+msgid "Jami"
+msgstr ""
+
+#: .\templates\index.html:151 .\templates\index.html:165
+msgid "murojaatlar"
+msgstr ""
+
+#: .\templates\index.html:157
+msgid "Tekshirish"
+msgstr ""
+
+#: .\templates\index.html:158
+msgid "va o\\"
+msgstr ""
+
+#: .\templates\index.html:164
+msgid "Qanoatlantirilgan"
+msgstr ""
+
+#: .\templates\index.html:171
+msgid "Solingan"
+msgstr ""
+
+#: .\templates\index.html:171
+msgid "jarimalar"
+msgstr ""
+
+#: .\templates\index.html:184
+msgid "Davlat organlari saytlari"
+msgstr ""
+
+#: .\templates\index.html:198 .\templates\index.html:525
+msgid "O`zbekiston Respublikasi bandlik va mehnat munosabatlari vazirligi"
+msgstr ""
+
+#: .\templates\index.html:209
+msgid "O`zbekiston respublikasi prezidentining rasmiy veb-sayti"
+msgstr ""
+
+#: .\templates\index.html:219 .\templates\index.html:252
+msgid "Yagona interaktiv davlat xizmatlari portali"
+msgstr ""
+
+#: .\templates\index.html:230
+msgid "O`zbekiston Respublikasi ochiq ma'lumotlar portali"
+msgstr ""
+
+#: .\templates\index.html:241
+msgid "O`zbekiston Respublikasi Hukumat portali"
+msgstr ""
+
+#: .\templates\index.html:276
+msgid "Ko'p beriladigan savollar"
+msgstr ""
+
+#: .\templates\index.html:285
+msgid "Ish joylarni attestasiyadan o‘tkazish – bu nima?"
+msgstr ""
+
+#: .\templates\index.html:292
+msgid ""
+"Ish joylarni attestasiyadan o`tkazish – ishlab chiqarish muhitidagi "
+"fizikaviy, kimyoviy, biologik omillarni, ish joyida mehnat jarayonidagi "
+"og`irlik va zo`riqishni sinov asboblarida kompleks o`rganish, uskunalarning "
+"jarohat yetkazish xavfini aniqlash jarayonidir."
+msgstr ""
+
+#: .\templates\index.html:300
+msgid "Ish joylarning attestasiyadan o`tkazish qayerda o`tkaziladi?"
+msgstr ""
+
+#: .\templates\index.html:306
+msgid ""
+"O‘zbekiston Respublikasi Adliya vazirligida 28 may 1996 yilda 247-raqam "
+"bilan ro‘yxatga olingan “Mehnat sharoitlarini baxolash, mehnat sharoitlari "
+"bo‘yicha ish joylarini attestasiyadan o‘tkazish uslubiyoti”ga muvofiq "
+"attestasiyadan o‘tkazish ishlari tashkiliy-huquqiy shakli, mulkchilik shakli "
+"va idoraviy bo‘ysunishidan qat'i nazar korxona va tashkilotlarda amalga "
+"oshiriladi."
+msgstr ""
+
+#: .\templates\index.html:314
+msgid "Nima uchun ish joylarni attestasiyadan o‘tkazish zarur?"
+msgstr ""
+
+#: .\templates\index.html:320 .\templates\index.html:337
+msgid ""
+"Ish joylarni attestasiyadan o‘tkazishning asosiy maqsadi, fuqarolarni "
+"sanitariya-gigiena me'yorlariga javob beruvchi sog‘lom va xavfsiz mehnat "
+"sharoitlariga bo‘lgan konstitusiyaviy huquqlarini ro‘yobga chiqarish;\n"
+"\n"
+"\t\t\t\t\t\t\t\tIsh joyi sharoitining zararliligi va mehnatning xavfliligi "
+"darajasini va qanday sinfga ta'aluqliligini asoslash;\n"
+"\t\t\t\t\t\t\t\t\n"
+"\t\t\t\t\t\t\t\tIshlab chiqarishda jarohatlanish va kasb kasalliklariga "
+"chalinishni oldini olish, mehnat sharoitlarini sog‘lomlashtirish "
+"tadbirlarini ishlab chiqish;\n"
+"\t\t\t\t\t\t\t\t\n"
+"\t\t\t\t\t\t\t\tO‘zbekiston Respublikasi Vazirlar Mahkamasining 1994 yil 12 "
+"maydagi 250-son qarori bilan tasdiqlangan O‘zbekiston Respublikasi "
+"«Fuqarolarni davlat pensiya ta'minoti haqida»gi qonuniga asosan imtiyozli "
+"davlat pensiya ta'minoti huquqini beruvchi 1, 2 va 3-son ro‘yxatlariga "
+"ishlab chiqarish, muassasa, ish, kasb, lavozim va ko‘rsatkichlarini "
+"taaluqliligini asoslash;\n"
+"\t\t\t\t\t\t\t\t\n"
+"\t\t\t\t\t\t\t\tKorxonada noqulay va alohida tusdagi mehnat sharoitida "
+"ishlagani uchun yillik qo‘shimcha ta'til kunlari va qiskartirilgan ish vaqti "
+"davomiyligi huquqini beruvchi ish, kasb va lavozimlar ro‘yxatlarini "
+"aniqlash;\n"
+"\t\t\t\t\t\t\t\t\n"
+"\t\t\t\t\t\t\t\tXodimni noqulay mehnat sharoitida ishlagani uchun imtiyozli "
+"davlat pensiya ta'minotiga huquqi mavjudligi yoki yo‘kligini tasdiqlash "
+"(belgilash);\n"
+"\t\t\t\t\t\t\t\t\n"
+"\t\t\t\t\t\t\t\tishlab chiqarishda jarohatlanish va kasb kasalliklariga "
+"chalinishni oldini olish, mehnat sharoitlarini sog‘lomlashtirish "
+"tadbirlarini ishlab chiqish uchun zarur."
+msgstr ""
+
+#: .\templates\index.html:358
+msgid "Ish joylarni attestasiyadan o‘tkazishga kim mas'ul?"
+msgstr ""
+
+#: .\templates\index.html:364
+msgid ""
+"Ish joylarni attestasiyadan o‘z vaqtida va sifatli o‘tkazish uchun korxona "
+"raxbari (ish beruvchi) mas'ul."
+msgstr ""
+
+#: .\templates\index.html:373
+msgid ""
+"Ish joylarning attestasiyadan o‘tkazish qaysi davrda amalga oshirilishi "
+"lozim?"
+msgstr ""
+
+#: .\templates\index.html:379
+msgid ""
+"Attestasiyadan o‘tkazish davriyligi korxona tomonidan belgilanadi, lekin 5 "
+"yilda bir martadan kam bo‘lmasligi kerak."
+msgstr ""
+
+#: .\templates\index.html:556
+msgid "Yuborish"
+msgstr ""
+
+#: .\templates\madhiya.html:14
+msgid "MADHIYA"
+msgstr ""
+
+#: .\templates\madhiya.html:23
+msgid "O‘ZBEKISTON RESPUBLIKASINING DAVLAT MADHIYASI"
+msgstr ""
+
+#: .\templates\madhiya.html:24
+msgid ""
+"“O‘zbekiston Respublikasining davlat madhiyasi” to‘g‘risidagi qonun 1992 yil "
+"10 dekabrda O‘zbekiston Respublikasi Oliy Kengashining O‘n birinchi "
+"sessiyasida qabul qilingan."
+msgstr ""
+
+#: .\templates\madhiya.html:25
+msgid "Mutal Burhonov musiqasi <br>Abdulla Oripov so‘zi"
+msgstr ""
+
+#: .\templates\madhiya.html:26
+msgid ""
+"Serquyosh hur o‘lkam, elga baxt, najot, <br>Sen o‘zing do‘stlarga yo‘ldosh, "
+"mehribon! <br>Yashnagay to abad ilmu fan, ijod, <br>Shuhrating porlasin toki "
+"bor jahon!"
+msgstr ""
+
+#: .\templates\madhiya.html:27 .\templates\madhiya.html:30
+msgid "Naqarot:"
+msgstr ""
+
+#: .\templates\madhiya.html:28 .\templates\madhiya.html:31
+msgid ""
+"Oltin bu vodiylar - jon O‘zbekiston, <br>Ajdodlar mardona ruhi senga yor! "
+"<br>Ulug‘ xalq qudrati jo‘sh urgan zamon, <br>Olamni mahliyo aylagan diyor!"
+msgstr ""
+
+#: .\templates\madhiya.html:29
+msgid ""
+"Bag‘ri keng O‘zbekning O‘chmas iymoni, <br>Erkin, yosh avlodlar senga zo‘r "
+"qanot! <br>Istiqlol mash'ali tinchlik posboni, <br>Xaqsevar, ona yurt, mangu "
+"bo‘l obod!"
+msgstr ""
+
+#: .\templates\managment.html:25 .\templates\sections.html:25
+msgid "Tarjimai hol"
+msgstr ""
+
+#: .\templates\managment.html:26 .\templates\sections.html:26
+msgid "Funksiya va vazifalar"
+msgstr ""
+
+#: .\templates\news.html:62
+msgid "Davomi..."
+msgstr ""
+
+#: .\templates\regional.html:19 .\templates\regional.html:21
+msgid "Manzil:"
+msgstr ""
+
+#: .\templates\regional.html:20
+msgid "Boshqarma boshlig\\"
+msgstr ""
+
+#: .\templates\regional.html:22
+msgid "Telefon:"
+msgstr ""
+
+#: .\templates\search.html:40
+msgid "Qidiruv bo\\"
+msgstr ""

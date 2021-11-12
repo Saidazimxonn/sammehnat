@@ -1,25 +1,24 @@
 {% extends 'base.html' %}
 {% load static %}
-{% load i18n%}
+{% load  i18n %}
 {% block content %}
 
 <section class="inner-page">
     <div class="container">
       
       <div class="row">
-          <div class="col-md-9">                  
-           
-{% for region in regions_list %}
+          <div class="col-md-9">                
+{% if object_list %}    
+    {% for region in object_list %}
 
 <div class="personalBlock">                        
                 <!-- <a target="_blank" href="../../uploads/1550475473_img_20181205_180628_481.jpg"> 
                 <img class="personalImage" src="{{ region.image.url}}"></a> -->
                                                 
         <div class="personalCard">
-            <div class="personalCardName"><i class="bx bx-buildings"></i>{% trans 'Manzil:' %} {{region.name}}</div>
-            <div class="personalCardPosition"><i class="bx bx-user"></i>{% trans 'Boshqarma boshlig\'i:' %} {{ region.}}</div>
-            <div class="personalCardRecDays"><i class="bx bx-map"></i>{% trans 'Manzil:' %} {{region.title}}</div>
-            <div class="personalCardRecDays"><i class="bx bx-phone"></i>{% trans 'Telefon:' %} {{ region.phone}}</div>
+            <a href="{% url 'news_d' region.id %}" > <div class="personalCardName">{{region.title}}</div></a>   
+            <!-- <div class="personalCardRecDays">{{region.title}}</div> -->
+        <div class="personalCardRecDays"><i class="bx bx-calendar"></i>{{ region.date.date}}</div>
             
             <!-- <div class="minButtons js-toggleLinks">
               <a class="btn btn-info p-2" href="#biography">Tarjimai hol</a>
@@ -37,15 +36,14 @@
     </div>
     <hr>
     {% endfor %}
+    {% else %}
+<h1>{% trans 'Qidiruv bo\'yicha ma\'lumot topilmadi' %}</h1>
+{% endif %}
             </div>
           
           <div class="col-md-3"> 
       <div class="blog-sidebar margin-b-30">
-          <div class="blog-sidebar-heading">
-            <i class="blog-sidebar-heading-icon bx bx-history"></i>
-            <h4 class="blog-sidebar-heading-title">{% trans 'So`nggi yangiliklar' %}</h4>
-
-          </div>
+         
           <div class="blog-sidebar-content">                  
             <ul class="timeline-v2">
                              </ul>
@@ -53,7 +51,7 @@
       </div>
     
       <div class="blog-sidebar">
-      
+        
         <div class="blog-sidebar-content">
           <ul class="list-inline blog-sidebar-tags">
                         </ul>
