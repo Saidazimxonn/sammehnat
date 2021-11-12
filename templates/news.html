@@ -48,18 +48,18 @@
             {% for post in news_list %}
                <div class="col" >
 			<div class="card" style="width: 20rem;">
-			<a href="">
+			<a href="{% url 'news_d' post.id %}">
 				<div class="card-img-top product-img img-fluid"  style="background-image:url('{{post.image.url}}');height:200px;width:100%;  background-size:cover;  "></div>
-				<div class="card-body" style="height: 90px;">
-     
-				  <h5 class="card-text" style="font-size: 14px;">{{post.title}}</h5>
+				<div class="card-body" style="height: 125px;">
+                 <div style="color: rgb(167, 159, 159);font-weight: bolder;">   <i class="blog-sidebar-heading-icon bx bx-calendar"></i> {{post.date|date:"D d M Y "}}</div>
+				  <h5 class="card-text" style="font-size: 15px;color: darkslategray;">{{post.title}}</h5>
 				
 				  <!-- <p class="card-text">{{post.Text}}</p> -->
 				
-              
+             
 				</div>  
 			</a>
-				<a href="{% url 'news_d' post.id %}" class="btn btn-primary pt-2">{% trans 'Davomi...' %}</a>
+				<a href="{% url 'news_d' post.id %}" class="btn btn-success pt-2">{% trans 'Davomi...' %}</a>
 			  </div>
 			  </div>
 			  {% endfor %}

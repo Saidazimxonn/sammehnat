@@ -545,7 +545,7 @@ msgstr "E-Mail"
 
 #: .\templates\index.html:546
 #, fuzzy
-#| msgid "Telefon"
+#| msgid "Telefon:"
 msgid "Telefon"
 msgstr "Phone"
 

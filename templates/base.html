@@ -90,13 +90,13 @@
 		  <div class="stateSymbols">
 			  <a target="_blank" rel="noopener noreferrer" href="{% url 'bayroq' %}"><i>
 			  <img src="{% static 'images/flag.png' %}" alt=""></i>
-				  <span>Bayroq</span></a>
+				  <span>{% trans 'Bayroq' %}</span></a>
 			  <a target="_blank" rel="noopener noreferrer" href="{% url 'gerb' %}"><i>
 			  <img src="{% static 'images/gerb.png' %}" alt=""></i>
-				  <span>Gerb</span></a>
+				  <span>{% trans 'Gerb' %}</span></a>
 			  <a target="_blank" rel="noopener noreferrer" href="{% url 'madhiya' %}"><i>
 			  <img src="{% static 'images/gymn.png' %}" alt=""></i>
-				  <span>Madhiya</span></a>
+				  <span>{% trans 'Madhiya' %}</span></a>
 		  </div>
 		  <!-- <form action="{% url 'set_language' %}" method="post">{% csrf_token %}
 			<input name="next" type="hidden" value="{{ redirect_to }}">
@@ -237,7 +237,7 @@
 <!-- <li class="drop-down"><a href="#">Vakansiya</a> 
 	  <ul class="menu2">          	 
 	 </ul></li> -->
-<li class="drop-down" ><a href="{% url 'gmenyu' %}#contact">{% trans 'Bog`lanish' %}</a> 
+<li class="" ><a href="{% url 'gmenyu' %}#contact">{% trans 'Bog`lanish' %}</a> 
 	  <ul class="menu2">          	 
 	 </ul></li>
  </ul></li>
