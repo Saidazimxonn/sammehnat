@@ -1258,7 +1258,6 @@ welcome
   margin-bottom: 0px;
   padding-bottom: 0px;
 }
-
 @media (max-width: 991px) {
   .welcome-area .header-text {
     text-align: center;
@@ -1272,6 +1271,38 @@ welcome
   .welcome-area .header-text .btn-primary-line {
     margin: auto;
     margin-bottom: 50px;
+  }
+  .welcome-area .home-img-group .home-img.img-4{
+    width: 100%;
+    top: 23rem;
+    right: 7rem;
+  }
+  .welcome-area .home-img-group .home-img.img-2{
+    display: none;
+  }
+  .navbarh11{
+    position: relative; 
+    top: -13rem; 
+    left: 12rem; 
+    width: 35rem;
+    text-align: center;
+  }
+}
+@media (max-width: 768px){
+  .welcome-area .home-img-group .home-img.img-4{
+    width: 90%;
+    top: 9rem;
+    right: 2rem;
+  }
+  .welcome-area .home-img-group .home-img.img-2{
+    display: none;
+  }
+  .navbarh11{
+    position: relative;
+    top: -13rem;
+    left: 2rem;
+    width: 33rem;
+    text-align: center;
   }
 }
 

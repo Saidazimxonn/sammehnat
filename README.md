@@ -1,2 +1,1 @@
-# sammehnat
-Samarqand mehnat boshqarmasi
+# Mehnat-Public

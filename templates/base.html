@@ -2,6 +2,7 @@
 <html lang="en">
 {% load static %}
 {% load i18n %}
+{% load active_link_tags %}
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,10 +18,13 @@
 	<!-- Bootstrap & Plugins CSS -->
 	<link href="{% static 'assets1/css/bootstrap.min.css' %}" rel="stylesheet" type="text/css">
 	<link href="{% static 'assets1/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
-
+	
 	<!-- Custom CSS -->
 	<link href="{% static 'assets1/css/blue.css' %}" rel="stylesheet" type="text/css">
 	<link href="{% static 'assets1/css/style.css' %}" rel="stylesheet" type="text/css">
+	<link href="{% static 'assets1/style.css' %}" rel="stylesheet" type="text/css">
+	<link href="{% static 'assets1/css1.css' %}" rel="stylesheet" type="text/css">
+	<link href="{% static 'assets1/css2.css' %}" rel="stylesheet" type="text/css">
 	<meta charset="utf-8">
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
   
@@ -34,6 +38,7 @@
 		.search{
 			border: solid 1px #f5f9ff;
 		}
+		
 	</style>
 	<meta content="" name="description">
 	<meta content="" name="keywords">
@@ -113,29 +118,22 @@
 			</select>
 			<input type="submit" value="Go">
 		</form> -->
-		  <ul class="languages">
+		  <ul class="languages" style="color: #4F4846;">
 			{% get_current_language as LANGUAGE_CODE %}
 			{% get_available_languages as LANGUAGES %}
 			{% get_language_info_list for LANGUAGES as language %}
 			{% for lang in language %}
-			{% if lang.code == 'uz' %}
-			  <li class="">
-			
-				  <a hreflang="oz" href="/uz/">O’zb</a>
-			  </li>
-			{% elif lang.code == 'ko' %}
+		
 			  <li>
-				  <a hreflang="uz" href="/ko/">Ўзб</a>
+			  {% if lang.code == 'uz' %}
+			  <a hreflang="" href="/" {% if lang.code == LANGUAGE_CODE %} id="salom" {% endif %}  >
+				{{lang.name_local}}</a>
+			  {% else %}
+				  <a hreflang="" href="/{{lang.code}}/" {% if lang.code == LANGUAGE_CODE %} id="salom" {% endif %}  >
+					  {{lang.name_local}}</a>
+				  {% endif %}
 			  </li>
-			{% elif lang.code == 'ru' %}
-			  <li>
-				  <a hreflang="ru" href="/ru/">Рус</a>
-			  </li>
-			{% elif lang.code == 'en' %}
-			  <li>
-				  <a hreflang="en" href="/en/">Eng</a>
-			  </li>
-			  {% endif %}
+		
 			  {% endfor %} 
 		  </ul>
 		</div>
@@ -330,6 +328,18 @@ color: #fff;
 	<!-- Bootstrap -->
 	<script src="{% static 'assets1/js/popper.js' %}"></script>
 	<script src="{% static 'assets1/js/bootstrap.min.js' %}"></script>
+	
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script> 
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+	<script>
+	(function($){
+		"use strict";
+		$('.next').click(function(){ $('.carousel').carousel('next');return false; });
+		$('.prev').click(function(){ $('.carousel').carousel('prev');return false; });
+	})	
+	(jQuery);
+	</script>
 
 	<!-- Plugins -->
 	<script src="{% static 'assets1/js/scrollreveal.min.js' %}"></script>
@@ -358,6 +368,11 @@ color: #fff;
 	<script src="{% static 'assets/js/jquery.fancybox.js' %}"></script>
 	<script src="{% static 'assets/js/sweetalert2.all.min.js' %}"></script>
 	<script src="{% static 'assets/js/slaba.js' %}"></script>
+	
+	
+	<script src="{% static 'assets1/sj.js' %}"></script>
+	<script src="{% static 'assets1/sjmine.js' %}"></script>
+	<script src="{% static 'assets1/app.js' %}"></script>
 	
 </body>
 </html>

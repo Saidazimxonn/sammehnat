@@ -1,5 +1,6 @@
+from django.db.models import fields
 from modeltranslation.translator import register, TranslationOptions
-from .models import Managment, Sections, RegionalCenters, Post, LiveMessage
+from .models import Managment, Poster, Sections, RegionalCenters, Post, LiveMessage
 
 
 @register(Managment)
@@ -25,3 +26,7 @@ class PostTranslationOptions(TranslationOptions):
 @register(LiveMessage)
 class LiveMessageTranslationOptions(TranslationOptions):
     fields = ('name', 'message', 'message_long')
+
+@register(Poster)
+class PosterMessgeTranslationOptions(TranslationOptions):
+    fields = ('title', 'Text')

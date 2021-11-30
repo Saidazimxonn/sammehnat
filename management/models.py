@@ -2,7 +2,7 @@ from django.db import models
 from django.contrib.auth.models import User
 
 
-
+# Managment create
 class Managment(models.Model):
     name = models.CharField(verbose_name="F.I.SH", max_length=250)
     title = models.CharField(verbose_name="Lavozimi", max_length=250)
@@ -19,7 +19,8 @@ class Managment(models.Model):
     class Meta:
         verbose_name="Rahbaryat"
         verbose_name_plural="Rahbaryat azolari"
-    
+
+# Sections create  
 class Sections(models.Model):
     name = models.CharField(verbose_name="F.I.SH", max_length=250)
     title = models.CharField(verbose_name="Lavozimi", max_length=250)
@@ -36,7 +37,7 @@ class Sections(models.Model):
     class Meta:
         verbose_name="Bo'lim"
         verbose_name_plural="Bo'limlar"
-
+# Regionalny Centers Create
 class RegionalCenters(models.Model):
     name = models.CharField(verbose_name="Hududiy boshqarma nomi", max_length=250)
     leader = models.CharField(verbose_name="F.I.SH BOshqarma boshlig'i", max_length=250)
@@ -48,7 +49,8 @@ class RegionalCenters(models.Model):
     class Meta:
         verbose_name="Hududiy bo'lim"
         verbose_name_plural="Hududiy bo'limlar"
-        
+
+# Post Create    
 class Post(models.Model):
     user = models.ForeignKey(User,verbose_name='Muallif', on_delete=models.CASCADE)
     title = models.CharField(verbose_name="Qisqa matn", max_length=300)
@@ -64,7 +66,7 @@ class Post(models.Model):
         verbose_name_plural="Yangiliklar"
 
 
-# Create your models here.
+# LIve Messages
 class LiveMessage(models.Model):
     name = models.CharField(verbose_name="Name", max_length=100)
     phone = models.CharField(verbose_name="Phone", max_length=100)
@@ -76,3 +78,19 @@ class LiveMessage(models.Model):
     class Meta:
         verbose_name = 'Xabar'
         verbose_name_plural = 'Xabarlar'
+
+#Poster Create new ad
+
+class Poster(models.Model):
+    user = models.ForeignKey(User,verbose_name='Muallif', on_delete=models.CASCADE)
+    title = models.CharField(verbose_name="Qisqa matn", max_length=300)
+    Text = models.TextField(verbose_name="Matin", null=True, blank=True)
+    image = models.ImageField()
+    date  = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.title
+
+    class Meta:
+        verbose_name="E'lon"
+        verbose_name_plural="E'lonlar"

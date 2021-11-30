@@ -10,8 +10,10 @@ from django.contrib import messages
 from django.db.models import Q
 
 # Create your views here.
-class GlobaslView(TemplateView):
+class GlobaslView(ListView):
+    model = Post
     template_name = 'index.html'
+    context_object_name = 'news'
 
 # class Category(ListView):
 class ManagmentView(TemplateView):
@@ -19,7 +21,7 @@ class ManagmentView(TemplateView):
     model = Managment
     def get_context_data(self, **kwargs):
         context = super(ManagmentView, self).get_context_data(**kwargs)
-        context['managers_list'] = Managment.objects.all()
+        context['managers_list'] = Managment.objects.all().reverse()
         return context
 
 
@@ -28,7 +30,7 @@ class SectionsView(TemplateView):
     model = Sections
     def get_context_data(self, **kwargs):
         context = super(SectionsView, self).get_context_data(**kwargs)
-        context['sections_list'] = Sections.objects.all()
+        context['sections_list'] = Sections.objects.all().reverse()
         return context
 
 
@@ -37,7 +39,7 @@ class RegionalView(TemplateView):
     model = RegionalCenters
     def get_context_data(self, **kwargs):
         context = super(RegionalView, self).get_context_data(**kwargs)
-        context['regions_list'] = RegionalCenters.objects.all()
+        context['regions_list'] = RegionalCenters.objects.all().reverse()
         return context
 
 # New View

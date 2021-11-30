@@ -1,0 +1,183 @@
+@charset "UTF-8";
+
+body.vftvi {
+	background-color: #fff;
+}
+
+body.vftvi .topbar-c {
+	background: #fff;
+}
+
+body.vftvi .sidebar-nav, body.vftvi .sidebar-nav .sidebar-nav-comment-input {
+	background: #fff;
+}
+
+body.vftvi .sidebar-nav label, body.vftvi .sidebar-nav h3, body.vftvi .sidebar-nav p, body.vftvi .sidebar-nav .sidebar-nav-comment-input,
+body.vftvi .sidebar-nav a, body.vftvi .sidebar-nav #feedback-form .form-control  {
+	color: #000;
+}
+
+body.vftvi #feedback-form .form-control {
+	border: 1px #000 solid;
+}
+body.vftvi #feedback-form .invalid-feedback {
+	color: #000;
+}
+
+body.vftvi .sidebar-nav .sidebar-nav-comment-input::-moz-placeholder {
+  	color: #000;
+}
+
+body.vftvi .sidebar-nav .sidebar-nav-comment-input:-ms-input-placeholder {
+  	color: #000;
+}
+
+body.vftvi .sidebar-nav .sidebar-nav-comment-input::-webkit-input-placeholder {
+  	color: #000;
+}
+
+body.vftvi .contact-us .contact-us-timeline-day {
+	background: #000;
+}
+
+body.vftvi a, body.vftvi #hero h1, body.vftvi .section-title h2 {
+	color: #000;
+}
+
+body.vftvi i {
+	color: #000;
+}
+
+body.vftvi .timeline-v2 .timeline-v2-news-date {
+	color: #000;
+}
+
+body.vftvi .topbar-c .topbar-c-actions .topbar-c-actions-link:hover {
+	color: #000;
+	font-weight: 500;
+}
+
+body.vftvi a:before {
+	color: #000;
+	font-weight: 500;
+}
+
+body.vftvi a:hover {
+	color: #000;
+	font-weight: 500;
+}
+body.vftvi .search .search-btn .search-btn-default:hover, body.vftvi .search .search-btn .search-btn-active:hover {
+	color: #000;
+}
+
+body.vftvi img {
+	filter: gray;
+  	-webkit-filter: grayscale(1);
+  	filter: grayscale(1);
+}
+
+/* Navbar Nav */
+body.vftvi.header .navbar-nav .nav-item-child {
+	color: #000;
+}
+body.vftvi nav {
+	background-color: #fff;
+}
+body.vftvi.nav-item-child:hover{
+	color: #000;
+	font-weight: 500;
+}
+
+body.vftvi.header .navbar-nav .nav-item-child.active, body.vftvi .testimonials-v1-author {
+	color: #000;
+}
+
+body.vftvi.header .navbar-nav .nav-item-child.active:hover {
+	color: #000;
+	font-weight: 500;
+  	background: 0;
+}
+
+body.vftvi.header .navbar-nav .nav-item-child:hover, .header .navbar-nav .nav-item-child:focus {
+	color: #000;
+	font-weight: 500;
+}
+
+body.vftvi.header .navbar-nav .open .nav-item-child:hover, .header .navbar-nav .open .nav-item-child:focus {
+	background: 0;
+	font-weight: 500;
+}
+
+body.vftvi.header .dropdown-menu .dropdown-menu-item {
+	color: #000;
+}
+
+body.vftvi.header .dropdown-menu .dropdown-menu-item .dropdown-menu-item-child {
+	color: #000;
+}
+
+body.vftvi.header .dropdown-menu .dropdown-menu-item .dropdown-menu-item-child.active {
+	color: #000;
+}
+
+body.vftvi.header .dropdown-menu .dropdown-menu-item .dropdown-menu-item-child.active:hover {
+	color: #000;
+	font-weight: 500;
+	background: #fff;
+}
+
+body.vftvi.header .dropdown-menu .dropdown-menu-item .dropdown-menu-item-child:focus {
+	background: 0;
+}
+
+body.vftvi.header .dropdown-menu .dropdown-menu-item .dropdown-menu-item-child:hover {
+	color: #fff;
+	font-weight: 500;
+	background: #000;
+}
+
+body.vftvi.header .dropdown-menu .dropdown-menu-item.active .dropdown-menu-item-child {
+	color: #000;
+}
+
+body.vftvi.header .dropdown-menu .dropdown-menu-item.active .dropdown-menu-item-child:hover {
+	background: 0;
+	font-weight: 500;
+}
+
+body.vftvi .back-to-top-theme {
+	background: #000;
+	color: #fff;
+}
+
+body.vftvi .back-to-top-theme:hover {
+	background: #000;
+	font-weight: 500;
+	color: #fff;
+}
+
+
+body.vftvi .btn-base-bg, body.vftvi .btn-white-brd {
+	color: #fff;
+	background: #000;
+}
+
+body.vftvi .btn-base-bg:hover,body.vftvi .btn-white-brd:hover {
+	color: #000;
+	font-weight: 500;
+	background: #fff;
+}
+
+body.vftvi .promo-video {
+	display: none;
+}
+
+body.vftvi .blog-classic .blog-classic-hover-img {
+	filter: brightness(0);
+}
+
+body.vftvi #busm_map,body.vftvi #map, body.vftvi a, body.vftvi .fancybox-slide--iframe, body.vftvi .banner-img-v3, body.vftvi .services-v2-step-one, body.vftvi .services-v2-step-two, body.vftvi .services-v2-step-three, body.vftvi .footer-v8, body.vftvi .breadcrumbs-v1 {
+	filter: gray;
+  	-webkit-filter: grayscale(1);
+  	filter: grayscale(1);
+}
