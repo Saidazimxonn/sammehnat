@@ -1,7 +1,7 @@
 from django.db import models
 from django.shortcuts import render
 from django.views.generic import TemplateView, ListView, DetailView,View
-from .models import Managment, Sections, RegionalCenters, Post
+from .models import Managment, Sections, RegionalCenters, Post, Poster
 from django.core.paginator import Paginator, PageNotAnInteger, EmptyPage
 from django.shortcuts import redirect, render
 from django.urls import reverse
@@ -10,10 +10,15 @@ from django.contrib import messages
 from django.db.models import Q
 
 # Create your views here.
-class GlobaslView(ListView):
-    model = Post
+class GlobaslView(TemplateView):
     template_name = 'index.html'
-    context_object_name = 'news'
+    model = Post
+    model = Poster
+    def get_context_data(self, **kwargs):
+        context = super(GlobaslView, self).get_context_data(**kwargs)
+        context['news'] = Post.objects.all().reverse() 
+        context['poster'] = Poster.objects.all().reverse()
+        return context
 
 # class Category(ListView):
 class ManagmentView(TemplateView):
@@ -77,7 +82,10 @@ class NewsDetailView(DetailView):
         # return context
 
 # End New Ditail View
-
+class PostsDetailView(DetailView):
+    model = Poster
+    template_name = 'detail_post.html'
+    context_object_name = 'posts_detail'
 
 #Form action  
 class ActinView(View):

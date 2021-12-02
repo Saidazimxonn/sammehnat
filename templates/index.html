@@ -177,7 +177,7 @@
 	<!-- ***** Yangiliklar qismi boshlandi -->
 	<section class="section padding-bottom colored testimonial-2 gray-bg">
 		<div class="container">
-			<p class="text-center font-weight-bold p-2" style="font-size:30px;">Yangiliklar</p>
+			<p class="text-center font-weight-bold p-2" style="font-size:30px;">{% translate 'Tezkor yangiliklar' %}</p>
 			<div class="row align-items-center">
 				<div class="col-lg-12 testimonial-wrap-2">
 				
@@ -300,84 +300,24 @@
 	<!-- **** Elonlar qismi start -->
 	<section class="section padding-bottom colored testimonial-2 gray-bg">
 		<div class="container">
-			<p class="text-center font-weight-bold p-2" style="font-size:30px;">E'lonlar</p>
+			<p class="text-center font-weight-bold p-2" style="font-size:30px;">{% translate "E'lonlar" %}</p>
 			<div class="row align-items-center">
 				<div class="col-lg-12 testimonial-wrap-2">
 				
-	
+					{% for post in poster %}
 					<div class="news-card">
-						<a href="#" class="news-card__card-link"></a>
-						<img src="{% static 'assets1/news.jpg' %}" alt="" class="news-card__image">
+						<a href="{% url 'posts_d' post.id %}" class="news-card__card-link"></a>
+						<img src="{{ post.image.url }}" alt="{{ new.title }}" style="height: 25rem;" class="news-card__image">
 						<div class="news-card__text-wrapper">
-						  <h2 class="news-card__title">Mehnat uz yangiliklar</h2>
-						  <div class="news-card__post-date">Noyabr 23, 2021</div>
+						  <h2 class="news-card__title">{{ post.title|truncatewords:8 }}</h2>
+						  <div class="news-card__post-date">{{ post.date }}</div>
 						  <div class="news-card__details-wrapper">
-							<p class="news-card__excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est pariatur nemo tempore repellat? Ullam sed officia iure architecto deserunt distinctio, pariatur&hellip;</p>
-							<a href="#" class="news-card__read-more">Ko'proq <i class="fas fa-long-arrow-alt-right"></i></a>
+							<p class="news-card__excerpt">{{ post.Text|truncatewords:40 }}</p>
+							<a href="{% url 'posts_d' post.id %}" class="news-card__read-more">Ko'proq <i class="fas fa-long-arrow-alt-right"></i></a>
 						  </div>
 						</div>
 					</div>
-					<div class="news-card">
-						<a href="#" class="news-card__card-link"></a>
-						<img src="{% static 'assets1/news.jpg' %}" alt="" class="news-card__image">
-						<div class="news-card__text-wrapper">
-						  <h2 class="news-card__title">Mehnat uz yangiliklar</h2>
-						  <div class="news-card__post-date">Noyabr 23, 2021</div>
-						  <div class="news-card__details-wrapper">
-							<p class="news-card__excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est pariatur nemo tempore repellat? Ullam sed officia iure architecto deserunt distinctio, pariatur&hellip;</p>
-							<a href="#" class="news-card__read-more">Ko'proq <i class="fas fa-long-arrow-alt-right"></i></a>
-						  </div>
-						</div>
-					</div>
-					<div class="news-card">
-						<a href="#" class="news-card__card-link"></a>
-						<img src="{% static 'assets1/news.jpg' %}" alt="" class="news-card__image">
-						<div class="news-card__text-wrapper">
-						  <h2 class="news-card__title">Mehnat uz yangiliklar</h2>
-						  <div class="news-card__post-date">Noyabr 23, 2021</div>
-						  <div class="news-card__details-wrapper">
-							<p class="news-card__excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est pariatur nemo tempore repellat? Ullam sed officia iure architecto deserunt distinctio, pariatur&hellip;</p>
-							<a href="#" class="news-card__read-more">Ko'proq <i class="fas fa-long-arrow-alt-right"></i></a>
-						  </div>
-						</div>
-					</div>
-					<div class="news-card">
-						<a href="#" class="news-card__card-link"></a>
-						<img src="{% static 'assets1/news.jpg' %}" alt="" class="news-card__image">
-						<div class="news-card__text-wrapper">
-						  <h2 class="news-card__title">Mehnat uz yangiliklar</h2>
-						  <div class="news-card__post-date">Noyabr 23, 2021</div>
-						  <div class="news-card__details-wrapper">
-							<p class="news-card__excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est pariatur nemo tempore repellat? Ullam sed officia iure architecto deserunt distinctio, pariatur&hellip;</p>
-							<a href="#" class="news-card__read-more">Ko'proq <i class="fas fa-long-arrow-alt-right"></i></a>
-						  </div>
-						</div>
-					</div>
-					<div class="news-card">
-						<a href="#" class="news-card__card-link"></a>
-						<img src="{% static 'assets1/news.jpg' %}" alt="" class="news-card__image">
-						<div class="news-card__text-wrapper">
-						  <h2 class="news-card__title">Mehnat uz yangiliklar</h2>
-						  <div class="news-card__post-date">Noyabr 23, 2021</div>
-						  <div class="news-card__details-wrapper">
-							<p class="news-card__excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est pariatur nemo tempore repellat? Ullam sed officia iure architecto deserunt distinctio, pariatur&hellip;</p>
-							<a href="#" class="news-card__read-more">Ko'proq <i class="fas fa-long-arrow-alt-right"></i></a>
-						  </div>
-						</div>
-					</div>
-					<div class="news-card">
-						<a href="#" class="news-card__card-link"></a>
-						<img src="{% static 'assets1/news.jpg' %}" alt="" class="news-card__image">
-						<div class="news-card__text-wrapper">
-						  <h2 class="news-card__title">Mehnat uz yangiliklar</h2>
-						  <div class="news-card__post-date">Noyabr 23, 2021</div>
-						  <div class="news-card__details-wrapper">
-							<p class="news-card__excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est pariatur nemo tempore repellat? Ullam sed officia iure architecto deserunt distinctio, pariatur&hellip;</p>
-							<a href="#" class="news-card__read-more">Ko'proq <i class="fas fa-long-arrow-alt-right"></i></a>
-						  </div>
-						</div>
-					</div>
-					
+				{% endfor %}
 				</div>
 
 				

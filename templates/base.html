@@ -7,7 +7,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>{% trans 'Samarqand viloyati'  %} | {% trans 'Bandlik bosh boshqarmasi'  %}</title>
+	<title>{% blocktranslate %}Samarqand viloyati Bandlik bosh boshqarmasi{% endblocktranslate %}</title>
 	<meta name="description" content="Jirono - IT Solutions and Corporate template by tempload." />
 	<meta name="keywords" content="Jirono, startup, saas, agency, development, html, template, tempload" />
 	<meta name="author" content="tempload"/>
@@ -127,10 +127,10 @@
 			  <li>
 			  {% if lang.code == 'uz' %}
 			  <a hreflang="" href="/" {% if lang.code == LANGUAGE_CODE %} id="salom" {% endif %}  >
-				{{lang.name_local}}</a>
+				{{lang.code}}</a>
 			  {% else %}
 				  <a hreflang="" href="/{{lang.code}}/" {% if lang.code == LANGUAGE_CODE %} id="salom" {% endif %}  >
-					  {{lang.name_local}}</a>
+					  {{lang.code}}</a>
 				  {% endif %}
 			  </li>
 		
